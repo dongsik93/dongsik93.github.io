@@ -1695,13 +1695,13 @@ img::-moz-selection {
     color: #0e0f0f;
     text-decoration: none;
     background-image: none;
-    box-shadow: inset 0 -0.5em 0 #95e8ed;
+    box-shadow: inset 0 -0.5em 0 #95e8ed !important;
     transition: box-shadow .2s ease-in-out;
 }
   
 underlineFill:hover, 
 underlineFill:focus {
-  box-shadow: inset 0 -1.2em 0 #ed65e8;
+  box-shadow: inset 0 -1.2em 0 #ed65e8 !important;
   text-shadow: none;
   background-image: none;
 }
