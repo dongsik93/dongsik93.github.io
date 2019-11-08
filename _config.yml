@@ -103,7 +103,19 @@ page-mathjax: false
 # Friends
 friends: [
     {
+        title: "김준영",
+        href: "https://github.com/kjywow94/"
+    },
+    {
+        title: "김혜빈",
+        href: "https://kimhyebin.github.io/"
+    },
+    {
         title: "양시영",
         href: "https://dev-lagom.tistory.com/"
+    },
+    {
+        title: "정태준",
+        href: "https://TaeJuneJoung.github.io"
     },
 ]
