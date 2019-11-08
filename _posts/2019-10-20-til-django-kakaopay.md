@@ -40,7 +40,7 @@ comments: true
 
 - PC웹에서의 카카오페이 결제 과정이다
 
-![pay1](/img/in-post/post-kakaopay-djangopay/pay1.png)
+![pay1](/img/in-post/post-kakaopay-django/pay1.png)
 
 - 단건결제 프로세스를 테스트한다
 
@@ -61,7 +61,7 @@ Content-type: application/x-www-form-urlencoded;charset=utf-8
 - 헤더에 `Authorization` , `Content-type` 을 함께 요청하고
 - 아래 사진의 파라미터 값들과 함께 POST 요청을 한다
 
-![pay2](/img/in-post/post-kakaopay-djangopay/pay2.png)
+![pay2](/img/in-post/post-kakaopay-django/pay2.png)
 
 <br>
 
@@ -136,7 +136,7 @@ export default {
 - vuetify의 modal을 이용해서 충전 할 포인트를 선택하고 이 값만큼 요청해준다
 - 백엔드 요청주소인 `http://127.0.0.1:8000/accounts/kakaopay/` 에 충전양(amount)를 같이 POST 요청
 
-![pay3](/img/in-post/post-kakaopay-djangopay/pay3.png)
+![pay3](/img/in-post/post-kakaopay-django/pay3.png)
 
 #### 요청받기(back)
 
@@ -240,24 +240,24 @@ export default {
   - res 에는 요청에 대한 응답 결과가 나오는데, 이 중 웹 pc환경에서 사용하는 `next_redirect_pc_url` 을 사용
   - `location.href` 를 통해 payUrl로 이동
 
-  ![pay4](/img/in-post/post-kakaopay-djangopay/pay4.png)
+  ![pay4](/img/in-post/post-kakaopay-django/pay4.png)
 
   - payUrl 이동 결과 화면
   - 휴대폰 번호와 생년 월일을 입력 후 화면
 
-  ![pay5](/img/in-post/post-kakaopay-djangopay/pay5.png)
+  ![pay5](/img/in-post/post-kakaopay-django/pay5.png)
 
   - 핸드폰으로 들어가서 진행을 해보자
 
-  ![pay6](/img/in-post/post-kakaopay-djangopay/pay6.jpeg)
+  ![pay6](/img/in-post/post-kakaopay-django/pay6.jpeg)
 
   - 위에서 10,000으로 요청한 금액과, 상품이름인 포인트, 부가세가 잘 적용된 모습이다.
 
-  ![pay7](/img/in-post/post-kakaopay-djangopay/pay7.jpeg)
+  ![pay7](/img/in-post/post-kakaopay-django/pay7.jpeg)
 
   - 테스트 환경이기 때문에 카카오페이 비밀번호 인증단계가 생략된 모습이다
 
-  ![pay8](/img/in-post/post-kakaopay-djangopay/pay8.jpeg)
+  ![pay8](/img/in-post/post-kakaopay-django/pay8.jpeg)
 
   - 결제가 완료되면 이렇게 결제 정보가 카톡으로 넘어온다
   - 결제가 완료되면 _views.py_ 에 지정해준 결제 성공했을 때 url로 이동하게 된다
