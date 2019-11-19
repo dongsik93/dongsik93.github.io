@@ -88,3 +88,9 @@ comments: true
 
 #### 5. Wallet
 ![wallet](/img/in-post/block_pro/Wallet.png)
+
+### 팀원
+- [강은주's github](https://github.com/EunJu-Kang)
+- [김혜빈's github](https://github.com/kimhyebin)
+- [문동식's github](https://github.com/dongsik93)
+- [양명균's github](https://github.com/MyeongKKyul)
