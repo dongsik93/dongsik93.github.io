@@ -89,6 +89,10 @@ comments: true
 #### 5. Wallet
 ![wallet](/img/in-post/block_pro/Wallet.png)
 
+
+### 프로젝트 기간
+- 19.08.19 ~ 19.10.11 (7주)
+
 ### 팀원
 - [강은주's github](https://github.com/EunJu-Kang)
 - [김혜빈's github](https://github.com/kimhyebin)
