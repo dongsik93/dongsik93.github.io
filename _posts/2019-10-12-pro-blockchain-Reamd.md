@@ -12,6 +12,16 @@ comments: true
 
 윈도우 XP의 공식 배경화면으로 유명한 언덕사진을 찍은 사진작가는 세계에서 2번째로 많은 저작권료를 받고 있습니다. 핸드폰으로 사진작가 못지 않은 퀄리티를 내는 요즘, 찍은 사진들의 저작권을 쉽게 사고팔면 어떨까? 하는 생각을 바탕으로 저작권을 쉽고 안전하게 거래 할 수 있는 사이트를 개발하였습니다.
 <br>
+
+### 프로젝트 기간
+- 19.08.19 ~ 19.10.11 (7주)
+
+### 팀원
+- [강은주's github](https://github.com/EunJu-Kang)
+- [김혜빈's github](https://github.com/kimhyebin)
+- [문동식's github](https://github.com/dongsik93)
+- [양명균's github](https://github.com/MyeongKKyul)
+
 <br>
 >클릭하면 YouTube로 넘어갑니다.
 >
@@ -88,13 +98,3 @@ comments: true
 
 #### 5. Wallet
 ![wallet](/img/in-post/block_pro/Wallet.png)
-
-
-### 프로젝트 기간
-- 19.08.19 ~ 19.10.11 (7주)
-
-### 팀원
-- [강은주's github](https://github.com/EunJu-Kang)
-- [김혜빈's github](https://github.com/kimhyebin)
-- [문동식's github](https://github.com/dongsik93)
-- [양명균's github](https://github.com/MyeongKKyul)
