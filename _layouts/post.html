@@ -43,11 +43,18 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
-                {% if site.disqus_username %}
+                <!-- {% if site.disqus_username %}
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
-                {% endif %}
+                {% endif %} -->
+                <script src="https://utteranc.es/client.js"
+                        repo="dongsik93/blog-comments"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
             </div>  
 
     <!-- Side Catalog Container -->
