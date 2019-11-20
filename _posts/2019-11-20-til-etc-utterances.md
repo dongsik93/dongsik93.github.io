@@ -36,23 +36,23 @@ comments: true
 
 1. 가장 먼저 girhub에 repo를 만들어준다(이슈 저장용도)
 
-    ![1](img/in-post/utterances/1.png)
+    ![1](/img/in-post/utterances/1.png)
 
    - `repo` 빈칸에 만들어준 repository이름을 적어준다
 
 2. 어떤 형태를 블로그 글과 이슈를 매핑할 것인지를 골라준다
 
-   ![2](img/in-post/utterances/2.png)
+   ![2](/img/in-post/utterances/2.png)
 
    -  `Issue title contains page pathname`을 선택했다
 
 3. 테마를 골라준다
 
-   ![3](img/in-post/utterances/3.png)
+   ![3](/img/in-post/utterances/3.png)
 
 4. 소스를 disqus를 적용했던 곳에 교체해준다
 
-   ![4](img/in-post/utterances/4.png)
+   ![4](/img/in-post/utterances/4.png)
 
    - 위에서 repo를 입력했다면 `[ENTER REPO HERE]` 부분이 해당 repo이름으로 바뀐채 적용되있다.
 
@@ -66,7 +66,7 @@ comments: true
 
 6. 끝!!! 인줄 알았지만 에러가 발생했다
 
-   ![5](img/in-post/utterances/5.png)
+   ![5](/img/in-post/utterances/5.png)
 
    - 해당 repo에 utterances를 install하지 않았다고 한다
    - 링크를 눌러서 install을 해주면 된다
@@ -76,11 +76,11 @@ comments: true
    - 블로그에 댓글이 적용된 화면이다
    - 깃헙의 프로필 이미지와 닉네임이 연동되어 나타난다
 
-   ![6](img/in-post/utterances/6.png)
+   ![6](/img/in-post/utterances/6.png)
 
    - 다음은 만들어준 repo에 이슈가 생성된 모습이다
 
-   ![7](img/in-post/utterances/7.png)
+   ![7](/img/in-post/utterances/7.png)
 
 <br>
 
