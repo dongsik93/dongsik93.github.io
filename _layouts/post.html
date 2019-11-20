@@ -88,7 +88,7 @@ layout: default
   {% include mathjax_support.html %}
 {% endif %}
 
-{% if site.disqus_username %}
+<!-- {% if site.disqus_username %}
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
@@ -101,8 +101,15 @@ layout: default
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-{% endif %}
+{% endif %} -->
 
+<script src="https://utteranc.es/client.js"
+        repo="dongsik93/blog-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 {% if site.anchorjs %}
 <!-- async load function -->
