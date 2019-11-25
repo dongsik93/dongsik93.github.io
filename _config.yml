@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: ehdtlr9376@gmail.com
 description: "무슨 멘트?"
 keyword: "동식, python, ssafy, django, aws, vue.js, web"
-url: "https://dongsik93.github.io/"              # your host, for absolute URL
+url: "https://dongsik93.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
