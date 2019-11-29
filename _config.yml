@@ -104,6 +104,10 @@ page-mathjax: false
 # Friends
 friends: [
     {
+        title: "강은주",
+        href: "https://eunju-kang.github.io/"
+    },
+    {
         title: "김준영",
         href: "https://github.com/kjywow94/"
     },
