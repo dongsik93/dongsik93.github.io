@@ -27,24 +27,6 @@ comments: true
 1. 루트에 파일 2개를 추가해준다
 
    - `search2.json`
-
-   ```json
-   ---
-   layout: null
-   ---
-   [
-     {% for post in site.posts %}
-       {
-         "title"    : "{{ post.title | escape }}",
-         "category" : "{{ post.category }}",
-         "tags"     : "{{ post.tags | join: ', ' }}",
-         "url"      : "{{ site.baseurl }}{{ post.url }}",
-         "date"     : "{{ post.date }}"
-       } {% unless forloop.last %},{% endunless %}
-     {% endfor %}
-   ]
-   ```
-
    - `Simple-Jekyll-Search.sublime-project`
 
    ```
