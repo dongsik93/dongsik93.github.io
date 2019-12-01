@@ -11,14 +11,16 @@
 }
 .underlineFill{
   text-decoration: none;
-  border-bottom: -3px solid #b4e7f8;
+  border-bottom: -2px solid orange;
   box-shadow: inset 0px -7px 0px #b4e7f8;
-  color: black;
+  color: black !important;
   -webkit-transition: background .15s cubic-bezier(.33, .66, .66, 1);
   transition: background .15s cubic-bezier(.33, .66, .66, 1);
 }
 .underlineFill:hover {
-  background: #b4e7f8;
+  text-decoration: none;
+  color: white !important;
+  background: orange;
 }
 .sidebar-container {
   color: #bfbfbf;
