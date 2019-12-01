@@ -1,7 +1,7 @@
 ---
 title: Archive
 layout: default
-description: keep hungry keep foolish
+description: 인생은 속도가 아니라 방향이다
 header-img: "img/tag-bg.jpg"
 ---
 
@@ -36,7 +36,8 @@ https://github.com/kitian616/jekyll-TeXt-theme
 				{% endcapture %}
         {{ tags | split:'</a>' | sort | join:'</a>' }}
 			</div>
-
+			<!-- Search  -->
+			{% include search.html type='page' short=true %}
             <!-- Article List -->
 			<div class="mini-post-list js-result d-none">
 			{%- assign _sorted_list = site.posts -%}
