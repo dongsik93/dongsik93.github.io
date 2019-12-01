@@ -11,8 +11,8 @@
 }
 .underlineFill{
   text-decoration: none;
-  border-bottom: -2px solid orange;
-  box-shadow: inset 0px -7px 0px orange;
+  border-bottom: -2px solid #ff9900;
+  box-shadow: inset 0px -7px 0px #ff9900;
   color: black !important;
   -webkit-transition: background .15s cubic-bezier(.33, .66, .66, 1);
   transition: background .15s cubic-bezier(.33, .66, .66, 1);
@@ -20,7 +20,7 @@
 .underlineFill:hover {
   text-decoration: none;
   color: white !important;
-  background: orange;
+  background: #ff9900;
 }
 .sidebar-container {
   color: #bfbfbf;
