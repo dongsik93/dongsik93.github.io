@@ -87,6 +87,20 @@ www.example.com?id=dongsik&pass=1234
 - 복잡한 형태의 데이터를 전송할 때 유용하다
 - 데이터베이스에 대한 갱신 작업과 같은 **서버측에서의 정보 갱신 작업을 원할 때** 사용한다
 
+### GET / POST 차이
+
+GET은 Idempotent, POST는 Non-idempotent하게 설계되었다.
+
+> Idempotent(멱등)
+>
+> 수학이나 전산학에서 연산의 한 성질을 나타내는 것으로, 연산을 여러 번 적용하더라도 결과가 달라지지 않는 성질
+
+- GET이 Idempotent하도록 설계되었다는 것은 GET으로 **서버에게 동일한 요청을 여러 번 전송하더라도 동일한 응답이 돌아와야 한다는 것**을 의미한다.
+  - 주로 조회를 할 때 사용하는 이유
+
+- 반대로 POST는 Non-idempotent하기 때문에 **서버에게 동일한 요청을 여러 번 전송해도 응답은 항상 다를 수 있다**
+  - 서버의 상태나 데이터를 변경시킬 때 사용되는 이유
+
 <br>
 
 참고사이트
@@ -94,3 +108,4 @@ www.example.com?id=dongsik&pass=1234
 - [파라미터 전송 - GET, POST방식](https://all-record.tistory.com/100)
 - [돌이의 서버이야기 : 네트워크 전송방식 - GET, POST 공통점 차이점 예제](https://soul0.tistory.com/185)
 - [GET방식과 POST방식](https://mommoo.tistory.com/60)
+- [GET과 POST의 차이](https://hongsii.github.io/2017/08/02/what-is-the-difference-get-and-post/)
