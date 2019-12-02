@@ -4,7 +4,7 @@ title: "Django ORM 정리"
 subtitle: "django orm"
 date: 2019-12-02 01:00:00 +0900
 categories: til
-tags: tech, django, db
+tags: django db tech
 comments: true
 ---
 
