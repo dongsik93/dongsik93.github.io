@@ -74,14 +74,14 @@ class List(ListView):
 
 ```html
 <!-- list.html 의 예시-->
-{% extends "movie/base.html" %}
-{% block body %}
+{% raw %}{% extends "movie/base.html" %}{% endraw %}
+{% raw %}{% block body %}{% endraw %}
     
-    {% for movie in movies %}
+    {% raw %}{% for movie in movies %}{% endraw %}
     <h1>list page</h1>
-    {% endfor %}
+    {% raw %}{% endfor %}{% endraw %}
 
-{% endblock %}
+{% raw %}{% endblock %}{% endraw %}
 ```
 
 <br> 참고사이트
