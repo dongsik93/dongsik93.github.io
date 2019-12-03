@@ -264,7 +264,7 @@ const app = new Vue({
                         // 수정
                         this.images2.push(response.data.message)
                     })
-                }
+                },
             }
         })
 
@@ -321,7 +321,7 @@ const app = new Vue({
                 //         // answer를 가져옴
                 //         this.answer2 = response.data.answer
                 //     })
-                }
+                },
             },
             methods:{
                 getAnswer:function(){
@@ -333,7 +333,7 @@ const app = new Vue({
                             this.answer = response.data.answer
                         })
                     }
-                }
+                },
             },
         })
     </script>
