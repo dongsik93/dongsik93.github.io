@@ -13,11 +13,10 @@ comments: true
 ### directive
 
 
-- `v-text`
-
+- `v-text` 
 ```html
  <div id="app">
-     <h1>{{message}}</h1>
+     <h1>{% raw %}{{message}}{% endraw %}</h1>
      <h1 v-text="message"></h1>
 </div>
 
@@ -36,7 +35,7 @@ const app = new Vue({
 <div id="app">
     <div>
         <!-- h3가 적용이 안됨 -->
-        {{msg}}
+        {% raw %}{{msg}}{% endraw %}
     </div>
     <!-- 적용됨 -->
     <div v-html="msg"></div>
@@ -131,18 +130,18 @@ const app = new Vue({
 
 ```html
 <div id="app">
-    {{message}}
+    {% raw %}{{message}}{% endraw %}
     <!-- 선언문은 사용 불가 -->
-    {{ const a = 10 }}
+    {% raw %}{{ const a = 10 }}{% endraw %}
     <!-- 분기문도 사용 불가	-->
-    {{ if(true){return 10}}}
+    {% raw %}{{ if(true){return 10}}}{% endraw %}
     <!-- 3항 연산자는 사용 가능 -->
-    {{ true ? 100 : 0 }}			
-    {{message.split('').reverse().join('')}}
-    {{message + "!!!!"}}
+    {% raw %}{{ true ? 100 : 0 }}{% endraw %}			
+    {% raw %}{{message.split('').reverse().join('')}}{% endraw %}
+    {% raw %}{{message + "!!!!"}}{% endraw %}
     
-    <h1>{{ reverseMsg }}</h1> 
-    <h1>{{ reverseMessage() }}</h1>
+    <h1>{% raw %}{{ reverseMsg }}{% endraw %}</h1> 
+    <h1>{% raw %}{{ reverseMessage() }}{% endraw %}</h1>
 
 </div>
 
@@ -290,7 +289,7 @@ const app = new Vue({
         <h1 v-text="title"></h1>
         <input v-model="question">
         <!-- <h3>{{question}}</h3> -->
-        <h3>{{answer}}</h3>
+        <h3>{% raw %}{{answer}}{% endraw %}</h3>
         <img v-bind:src="img">
     </div>
 
