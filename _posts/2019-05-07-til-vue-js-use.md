@@ -35,10 +35,10 @@ const app = new Vue({
 ```html
 <div id="app">
     <div>
-        // h3가 적용이 안됨
+        <!-- h3가 적용이 안됨 -->
         {{msg}}
     </div>
-    // 적용됨
+    <!-- 적용됨 -->
     <div v-html="msg"></div>
 </div>
 
@@ -57,7 +57,7 @@ const app = new Vue({
 
 ```html
 <div id="app">
-    // 보임
+    <!-- 보임 -->
     <h1 v-show="true">쇼 이거보임?</h1>
     <h1 v-if="true">이프 이거보임?</h1>
     
@@ -73,7 +73,7 @@ const app = new Vue({
 
 ```html
 <a v-bind:href="url">네이버</a>
-// 약어 사용
+<!-- 약어 사용 -->
 <a :href="url">네이버</a>
 
 const app = new Vue({
@@ -90,7 +90,7 @@ const app = new Vue({
 
 ```html
 <select v-model="select">
-    // value = 보내주는 값, 태그 내의 한글은 보여주는 값
+    <!-- value = 보내주는 값, 태그 내의 한글은 보여주는 값 -->
     <option value="all">전체보기</option>
     <option value="complete">완료한것</option>
     <option value="active">아직 안한것</option>
@@ -132,14 +132,17 @@ const app = new Vue({
 ```html
 <div id="app">
     {{message}}
-    {{ const a = 10 }}				// 선언문은 사용 불가
-    {{ if(true){return 10}}}		// 분기문도 사용 불가
-    {{ true ? 100 : 0 }}			// 3항 연산자는 사용 가능
-    {{message.split('').reverse().join('')}} // 글자 뒤집기
+    <!-- 선언문은 사용 불가 -->
+    {{ const a = 10 }}
+    <!-- 분기문도 사용 불가	-->
+    {{ if(true){return 10}}}
+    <!-- 3항 연산자는 사용 가능 -->
+    {{ true ? 100 : 0 }}			
+    {{message.split('').reverse().join('')}}
     {{message + "!!!!"}}
     
-    <h1>{{ reverseMsg }}</h1> // computed는 변수처럼 
-    <h1>{{ reverseMessage() }}</h1> // methods는 함수로
+    <h1>{{ reverseMsg }}</h1> 
+    <h1>{{ reverseMessage() }}</h1>
 
 </div>
 
