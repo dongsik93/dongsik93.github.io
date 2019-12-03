@@ -4,7 +4,7 @@ title: "Jekyll blog Google에 검색가능하게 만들기"
 subtitle: "jekyll blog google search"
 date: 2019-07-27 18:00:00 +0900
 categories: til
-tags: etc
+tags: Jekyll
 comments: true
 ---
 

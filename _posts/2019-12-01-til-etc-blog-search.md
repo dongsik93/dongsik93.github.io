@@ -4,7 +4,7 @@ title: "Jekyll blog에 Search 적용하기"
 subtitle: "Simple-Jekyll-Search"
 date: 2019-12-01 02:00:00 +0900
 categories: til
-tags: etc
+tags: Jekyll
 comments: true
 ---
 

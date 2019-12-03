@@ -4,7 +4,7 @@ title: "Jekyll blog에 Adsense 적용하기"
 subtitle: "Adsense 적용기"
 date: 2019-08-25 12:37:00:00 +0900
 categories: til
-tags: etc
+tags: Jekyll
 comments: true
 ---
 

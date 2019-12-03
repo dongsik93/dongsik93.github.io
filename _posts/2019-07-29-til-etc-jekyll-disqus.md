@@ -4,7 +4,7 @@ title: "Jekyll blog에 Disqus댓글 연동하기"
 subtitle: "Jekyll blog에 Disqus댓글 연동하기"
 date: 2019-07-29 18:00:00 +0900
 categories: til
-tags: etc
+tags: Jekyll
 comments: true
 ---
 
