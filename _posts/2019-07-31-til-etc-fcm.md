@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "FCM을 활용한 웹 푸시 구현"
-subtitle: "FCM을 활용한 웹 푸시 구현"
+title: "FCM을 활용한 웹 푸시 구현 - javascript"
+subtitle: "javascript를 이용해서 푸시구현"
 date: 2019-07-31 18:00:00 +0900
 categories: til
-tags: etc
+tags: fcm js
 comments: true
 ---
 
