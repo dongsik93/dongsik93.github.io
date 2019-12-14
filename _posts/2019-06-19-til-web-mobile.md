@@ -4,7 +4,7 @@ title: "웹 / 모바일"
 subtitle: "웹 / 모바일"
 date: 2019-06-20 18:00:00 +0900
 categories: til
-tags: etc
+tags: lecture
 commtents: true
 ---
 

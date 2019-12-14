@@ -4,7 +4,7 @@ title: "Jira & Jenkin"
 subtitle: "Jira & Jenkin"
 date: 2019-06-20 18:00:00 +0900
 categories: til
-tags: etc
+tags: lecture
 comments: true
 ---
 

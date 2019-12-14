@@ -4,7 +4,7 @@ title: "Django REST API"
 subtitle: "Django REST API "
 date: 2019-07-20 18:00:00 +0900
 categories: til
-tags: django
+tags: django rest
 comments: true
 ---
 

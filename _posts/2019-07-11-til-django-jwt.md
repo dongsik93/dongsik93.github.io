@@ -4,7 +4,7 @@ title: "JWT를 사용한 REST API"
 subtitle: "Django에 jwt 사용하기"
 date: 2019-07-11 18:00:00 +0900
 categories: til
-tags: django
+tags: django jwt
 comments: true
 ---
 

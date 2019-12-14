@@ -4,7 +4,7 @@ title: "Django EB오류"
 subtitle: "Django EB오류해결 "
 date: 2019-07-15 18:00:00 +0900
 categories: til
-tags: django
+tags: django jwt
 comments: true
 ---
 

@@ -4,7 +4,7 @@ title: "블록체인 1강, 2강"
 subtitle: "비트코인"
 date: 2019-06-03 18:00:00 +0900
 categories: til
-tags: blockchain
+tags: BlockChain
 comments: true
 ---
 

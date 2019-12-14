@@ -4,7 +4,7 @@ title: "MSA(Microservice Architecture)"
 subtitle: "MSA(Microservice Architecture)"
 date: 2019-07-10 18:00:00 +0900
 categories: til
-tags: etc
+tags: msa theory
 comments: true
 ---
 

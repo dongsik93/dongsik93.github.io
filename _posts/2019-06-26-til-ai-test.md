@@ -4,7 +4,7 @@ title: "AI"
 subtitle: "ml, Numpy"
 date: 2019-06-26 18:00:00 +0900
 categories: til
-tags: etc
+tags: lecture
 comments: true
 ---
 

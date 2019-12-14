@@ -4,7 +4,7 @@ title: "영화추천 시스템"
 subtitle: "영화추천 시스템"
 date: 2019-06-18 19:00:00 +0900
 categories: til
-tags: etc
+tags: lecture
 commtents: true
 ---
 

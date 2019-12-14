@@ -4,7 +4,7 @@ title: "블록체인 16강,17강"
 subtitle: "리플"
 date: 2019-06-14 18:00:00 +0900
 categories: til
-tags: blockchain
+tags: BlockChain
 comments: true
 ---
 

@@ -4,7 +4,7 @@ title: "빅데이터"
 subtitle: "빅데이터 with python"
 date: 2019-06-24 18:00:00 +0900
 categories: til
-tags: etc
+tags: lecture
 comments: true
 ---
 
