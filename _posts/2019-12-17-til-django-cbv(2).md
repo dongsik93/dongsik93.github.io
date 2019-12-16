@@ -2,7 +2,7 @@
 layout: post
 title: "Django Class Based View (2)"
 subtitle: "CBV에 대한 이해 (2)"
-date: 2019-12-17 02:00:00 +0900
+date: 2019-12-17 10:00:00 +0900
 categories: til
 tags: django cbv
 comments: true
