@@ -299,8 +299,8 @@ comments: true
 
 참고사이트
 
-- [django 공식문서](https://docs.djangoproject.com/ko/2.2/topics/class-based-views/generic-display/)
-- [CBV (1) CBV와 Base Views](https://ssungkang.tistory.com/entry/Django-CBV-1-CBV-와-Base-Views)
-- [클래스형 뷰 (CBV)](https://wikidocs.net/9623)
-- [Django class based views for beginners](https://www.slideshare.net/spinlai/django-class-based-views-for-beginners)
+- [django 공식문서](https://docs.djangoproject.com/ko/2.2/topics/class-based-views/generic-display/){: class="underlineFill"}
+- [CBV (1) CBV와 Base Views](https://ssungkang.tistory.com/entry/Django-CBV-1-CBV-와-Base-Views){: class="underlineFill"}
+- [클래스형 뷰 (CBV)](https://wikidocs.net/9623){: class="underlineFill"}
+- [Django class based views for beginners](https://www.slideshare.net/spinlai/django-class-based-views-for-beginners){: class="underlineFill"}
 
