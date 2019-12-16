@@ -67,6 +67,16 @@ urlpatterns = [
 - 인스턴스 내에 해당 이름을 갖는 메소드로 요청을 중계한다
 - 해당 메소드가 정의되어 있지 않으면 **http_response_not_allowed** 를 발생시킨다
 
+#### 제네릭 뷰의 4가지 분류
+
+- Base View
+    - View, TemplateView, RedirectView
+- Generic Display View
+    - DetailView, ListView
+- Generic Edit View
+    - FormView, CreateView, UpdateView, DeleteView 
+- Generic Date View
+    - YearArchiveView, MonthArchiveView, DayArchiveView, TodayArchiveView, DateDetailView
 
 
 참고사이트
