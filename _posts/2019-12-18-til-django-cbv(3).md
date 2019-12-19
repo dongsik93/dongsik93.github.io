@@ -490,9 +490,7 @@ post_list = ListView.as_view(
 - 값을 2로 준다면 한 페이지에 두 개의 객체만 표시하게 된다
 - 각 페이지는 url 뒤에 querystring으로 **?page=페이지수**로 접근할 수 있다
 
-<br>
 참고사이트
-
 - [django 공식문서](https://docs.djangoproject.com/ko/2.2/topics/class-based-views/generic-display/){: class="underlineFill"}
 - [CBV (1) CBV와 Base Views](https://ssungkang.tistory.com/entry/Django-CBV-1-CBV-와-Base-Views){: class="underlineFill"}
 - [클래스형 뷰 (CBV)](https://wikidocs.net/9623){: class="underlineFill"}
