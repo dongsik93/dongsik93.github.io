@@ -263,7 +263,7 @@ from .models import Comment
 
 class CommentForm(forms.ModelForm):
     class Meta:
-        model = Review
+        model = Comment
         fields = ['userName', 'contents', ...]
 ```
 
