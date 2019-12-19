@@ -4,7 +4,7 @@ title: "PyCon Korea Tutorial Day 1 (08.15)"
 subtitle: "파이콘 후기"
 date: 2019-09-26 01:00:00 +0900
 categories: review
-tags: event
+tags: pycon review
 comments: true
 ---
 
