@@ -26,7 +26,7 @@ comments: true
 
 #### 인증과정
 
-#### ![token1](/Users/dongsik/Desktop/token1.png)
+#### ![token1](/img/in-post/token1.png)
 
 1. 사용자가 로그인을 한다
 2. 서버에서는 로그인 정보를 읽어 사용자를 확인한 후, DB에 없으면 저장한다
