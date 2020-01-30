@@ -4,7 +4,7 @@ title: "Channels를 이용한 실시간 채팅 구현 - 튜토리얼 (1)"
 subtitle: "django channel tutorial"
 date: 2020-01-18 15:00:00 +0900
 categories: til
-tags: django channel
+tags: django channel websocket
 comments: true
 ---
 
