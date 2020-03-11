@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "레이아웃과 기본 위젯 사용하2"
-subtitle: "Do it! 안드로이드(1)"
+title: "레이아웃과 기본 위젯 사용하기"
+subtitle: "Do it! 안드로이드(2)"
 date: 2020-03-11 17:30:00 +0900
 categories: til
 tags: android
