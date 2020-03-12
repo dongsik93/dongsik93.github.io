@@ -10,7 +10,7 @@ comments: true
 
 
 
-### SMS 입력화면 만들고 글자수 표시하기
+## SMS 입력화면 만들고 글자수 표시하기
 
 ```xaml
 <!--activity_main-->
