@@ -12,7 +12,7 @@ comments: true
 
 
 
-## 리니어 레이아웃(LinearLayout) 사용하기
+## [Android] 리니어 레이아웃(LinearLayout) 사용하기
 
 #### 방향설정
 

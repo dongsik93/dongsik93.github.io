@@ -12,7 +12,7 @@ comments: true
 
 
 
-## 인텐트
+## [Android] 인텐트
 
 
 

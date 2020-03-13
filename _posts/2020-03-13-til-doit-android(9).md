@@ -12,7 +12,7 @@ comments: true
 
 
 
-## 액티비티 수명주기
+## [Android] 액티비티 수명주기
 
 
 

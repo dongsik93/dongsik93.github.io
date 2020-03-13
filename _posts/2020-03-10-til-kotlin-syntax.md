@@ -8,7 +8,7 @@ tags: kotlin android
 comments: true
 ---
 
-# Kotlin 언어 알아보기
+# [Android] Kotlin 언어 알아보기
 
 > 앱 개발 직군에 들어가면서 kotlin을 배워야 하는 상황이 되었다
 
