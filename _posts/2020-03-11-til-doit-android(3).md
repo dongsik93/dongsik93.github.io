@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "리니어 레이아웃 사용하기"
+title: "[Android] 리니어 레이아웃 사용하기"
 subtitle: "Do it! 안드로이드(3)"
 date: 2020-03-11 18:30:00 +0900
 categories: til
@@ -12,7 +12,7 @@ comments: true
 
 
 
-## [Android] 리니어 레이아웃(LinearLayout) 사용하기
+## 리니어 레이아웃(LinearLayout) 사용하기
 
 #### 방향설정
 

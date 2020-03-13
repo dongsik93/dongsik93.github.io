@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Kotlin 언어 알아보기"
+title: "[Android] Kotlin 언어 알아보기"
 subtitle: "Kotlin Syntax"
 date: 2020-03-10 09:00:00 +0900
 categories: til
@@ -8,7 +8,7 @@ tags: kotlin android
 comments: true
 ---
 
-# [Android] Kotlin 언어 알아보기
+# Kotlin 언어 알아보기
 
 > 앱 개발 직군에 들어가면서 kotlin을 배워야 하는 상황이 되었다
 

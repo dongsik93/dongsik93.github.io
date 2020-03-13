@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SMS 입력화면 만들기"
+title: "[Android] SMS 입력화면 만들기"
 subtitle: "Do it! 안드로이드(6)"
 date: 2020-03-12 20:30:00 +0900
 categories: til
@@ -10,7 +10,7 @@ comments: true
 
 
 
-## [Android] SMS 입력화면 만들고 글자수 표시하기
+## SMS 입력화면 만들고 글자수 표시하기
 
 ```xaml
 <!--activity_main-->

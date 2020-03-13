@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "여러가지 레이아웃 사용하기"
+title: "[Android] 여러가지 레이아웃 사용하기"
 subtitle: "Do it! 안드로이드(4)"
 date: 2020-03-11 19:30:00 +0900
 categories: til
