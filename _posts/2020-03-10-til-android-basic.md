@@ -8,7 +8,7 @@ tags: kotlin android
 comments: true
 ---
 
-# Android 앱 기본요소
+# [Android] Android 앱 기본요소
 
 
 
