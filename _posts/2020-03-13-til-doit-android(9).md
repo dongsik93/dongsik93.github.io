@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "액티비티 수명주기"
+title: "[Android] 액티비티 수명주기"
 subtitle: "Do it! 안드로이드(9)"
 date: 2020-03-13 12:00:00 +0900
 categories: til
@@ -12,7 +12,7 @@ comments: true
 
 
 
-## [Android] 액티비티 수명주기
+## 액티비티 수명주기
 
 
 

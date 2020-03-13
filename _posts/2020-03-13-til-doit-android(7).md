@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "애플리케이션 구성하기"
+title: "[Android] 애플리케이션 구성하기"
 subtitle: "Do it! 안드로이드(7)"
 date: 2020-03-13 10:00:00 +0900
 categories: til
@@ -10,7 +10,7 @@ comments: true
 
 
 
-## [Android] 애플리케이션 구성하기
+## 애플리케이션 구성하기
 
 ### 레이아웃 인플레이션 이해
 

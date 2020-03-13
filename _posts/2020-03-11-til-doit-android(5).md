@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "기본 위젯들"
+title: "[Android] 기본 위젯들"
 subtitle: "Do it! 안드로이드(5)"
 date: 2020-03-11 20:30:00 +0900
 categories: til
@@ -12,7 +12,7 @@ comments: true
 
 
 
-## [Android] 기본 위젯들
+## 기본 위젯들
 
 ##### 텍스트뷰
 

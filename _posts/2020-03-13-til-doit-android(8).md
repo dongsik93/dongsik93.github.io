@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "인텐트와 액티비티 플래그"
+title: "[Android] 인텐트와 액티비티 플래그"
 subtitle: "Do it! 안드로이드(8)"
 date: 2020-03-13 11:00:00 +0900
 categories: til
@@ -12,7 +12,7 @@ comments: true
 
 
 
-## [Android] 인텐트
+## 인텐트
 
 
 

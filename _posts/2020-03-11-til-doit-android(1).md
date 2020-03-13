@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 스튜디오와 기본 레이아웃 익히기"
+title: "[Android] 안드로이드 스튜디오와 기본 레이아웃 익히기"
 subtitle: "Do it! 안드로이드(1)"
 date: 2020-03-11 17:00:00 +0900
 categories: til
@@ -10,7 +10,7 @@ comments: true
 
 
 
-## [Android] 안드로이드 스튜디오와 기본 레이아웃 익히기
+## 안드로이드 스튜디오와 기본 레이아웃 익히기
 
 ### 뷰(View)
 

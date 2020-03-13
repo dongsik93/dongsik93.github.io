@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android 앱 기본요소"
+title: "[Android] Android 앱 기본요소"
 subtitle: "android "
 date: 2020-03-10 22:30:00 +0900
 categories: til
@@ -8,7 +8,7 @@ tags: kotlin android
 comments: true
 ---
 
-# [Android] Android 앱 기본요소
+# Android 앱 기본요소
 
 
 
