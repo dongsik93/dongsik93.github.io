@@ -33,7 +33,7 @@ comments: true
 
 
 
-역시 공식문서 :thumbsup::thumbsup:
+역시 공식문서 👍👍
 
 
 
@@ -68,7 +68,7 @@ comments: true
    - 즉시 업데이트 방법이던, 유연한 업데이트 방법이던 구현을 했으면 테스트를 해봐야 한다
    - 하지만 많은 블로그들과 구글링 결과 **테스트는 플레이 스토어에 앱이 올라가있는 상태여야 가능하다** 
 
-   ```json
+   ``` 
    // 실제 appUpdateInfo 값
    {
       packageName=com.packageName,
