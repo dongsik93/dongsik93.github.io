@@ -43,11 +43,9 @@ import kotlinx.android.synthetic.main.view
 
 저번에 만들었던 CustomView를 한번 수정해보도록 하겠다
 
-<br/>
-
 [[Android] CustomView 만들기](https://dongsik93.github.io/til/2021/01/05/til-android-customview/){: class="underlineFill"}
 
-<br/>
+
 
 ```kotlin
 inflate(context, R.layout.seek_bar_view, this).apply {
@@ -58,8 +56,6 @@ inflate(context, R.layout.seek_bar_view, this).apply {
 ```
 
 - 위 코드에서 `seekBar`, `vw_icon`, `ll_info` 이 부분이 kotlin extensions을 통한 view를 참조해주는 부분이다
-
-<br/>
 
 - 이 부분을 `Databinding` 을 이용해 수정해 보자
 - 데이터 바인딩은 아래 포스팅 참고 !
