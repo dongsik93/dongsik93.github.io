@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Drag and Drop - Kotlin"
+title: "[Android] Drag and Drop - Kotlin"
 subtitle: "drag and drop, kotlin"
 date: 2021-02-05 21:00:00 +0900
 categories: til
@@ -20,7 +20,7 @@ comments: true
 
 
 
-1. ### 움직여야할 아이템 생성
+### 1. 움직여야할 아이템 생성
 
 - 먼저 리사이클러뷰를 통해 움직이게 될 아이템들을 만들어 준다
 
@@ -126,7 +126,7 @@ comments: true
 
 
 
-2. ### ItemTouchHelperCallback 구현하기
+### 2. ItemTouchHelperCallback 구현하기
 
 - 아이템들을 만들었으면 이제 본격적으로 drag and drop을 구현해야 한다
 
@@ -207,7 +207,7 @@ comments: true
 
 
 
-3. ### ItemTouchHelper 연결
+### 3. ItemTouchHelper 연결
 
 ```kotlin
 val adapter = DragAndDropAdapter(list)
@@ -230,7 +230,7 @@ adapter.startDrag(object : DragAndDropAdapter.OnStartDragListener {
 
 
 
-4. ### 리사이클러뷰 아이템 갱신
+### 4. 리사이클러뷰 아이템 갱신
 
 - 위의 순서까지 마무리하면 드래그앤 드롭은 완성되지만, 아이템이 드래그앤 드롭으로 변경된 후 뷰가 갱신되지 않는 현상이 발생한다
 
