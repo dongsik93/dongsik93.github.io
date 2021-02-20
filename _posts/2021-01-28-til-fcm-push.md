@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Android] FCM, 푸시 알림"
+title: "[Android] FCM, 푸시 알림(1/2)"
 subtitle: "FCM, 알림"
 date: 2021-01-28 23:30:00 +0900
 categories: til
