@@ -84,6 +84,7 @@ FCM으로 데이터를 수신받고 수신받은 데이터를 알림으로 띄�
 
   - `largeIcon` , `smallIcon`, `title` 등등 노티와 관련된 여러가지 설정을 해주고
   - 오레오 이상부터는 Channel 설정을 해줄수 있으므로 channel 설정까지 해준뒤 노티를 띄워주는 코드이다
+  - [Notification Builder Setting](https://developer.android.com/training/notify-user/build-notification?hl=ko){: class="underlineFill"}
 
 
 
