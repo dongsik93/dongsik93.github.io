@@ -35,6 +35,15 @@ class Behavior<T>(defaultValue: T) {
 
 
 
+```java
+/** BehaviorSubject */
+void onNext(@NonNull T t);
+```
+
+- 실제로 BehaviorSubject의 onNext의 매개변수는 `NonNull`로 선언이 되어있다
+
+
+
 코드는 잘 돌아가고 있었지만 warning이 난 이유를 알고 넘어가야 할 것 같기도하고, 왜? 라는 생각에 에러가 난 이유를 봐보니 nonnull을 넣어줘야 하는데 nullable한 값을 넘겨주고 있다는 것이었다.
 
 
