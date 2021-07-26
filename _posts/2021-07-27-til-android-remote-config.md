@@ -42,7 +42,7 @@ dependencies {
 
 - 처음 코드를 작성할 때는 Application class를 상속받은 클래스에 FirebaseRemoteConfig 객체를 전역으로 선언한 후 가져다 쓸 생각이였는데 Warning이 발생했다
 
-```
+```text
 Do not place Android context classes in static fields (static reference to FirebaseRemoteConfig which has field context pointing to Context); this is a memory leak
 ```
 
@@ -56,10 +56,10 @@ Do not place Android context classes in static fields (static reference to Fireb
 ```kotlin
 fun getRemoteConfigResult(tag: String, callback: RemoteConfigCallback): Disposable {
     val remoteConfig = FirebaseRemoteConfig.getInstance().apply {
-		    val configSettings = FirebaseRemoteConfigSettings.Builder()
-		          .setMinimumFetchIntervalInSeconds(30)
-		          .build()
-		    setConfigSettingsAsync(configSettings)
+        val configSettings = FirebaseRemoteConfigSettings.Builder()
+            .setMinimumFetchIntervalInSeconds(30)
+            .build()
+        setConfigSettingsAsync(configSettings)
         setDefaultsAsync(R.xml.remote_config_defaults)
     }
 	
@@ -89,7 +89,7 @@ fun getRemoteConfigResult(tag: String, callback: RemoteConfigCallback): Disposab
 <?xml version="1.0" encoding="utf-8"?>
 <defaultsMap>
     <entry>
-				<!-- 해당하는 Key, Value는 Firebase에 설정해준 값과 동일해야 한다 -->
+        <!-- 해당하는 Key, Value는 Firebase에 설정해준 값과 동일해야 한다 -->
         <key>android</key>
         <value>{"version_name":50201,"priority":1}</value>
     </entry>
