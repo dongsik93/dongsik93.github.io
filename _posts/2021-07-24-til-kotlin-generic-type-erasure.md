@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] 제네릭 - 파입 파라미터 소거"
+title: "[Kotlin] 제네릭 - 타입 파라미터 소거"
 subtitle: "Kotlin Type erasure"
 date: 2021-07-24 00:30:00 +0900
 categories: til
