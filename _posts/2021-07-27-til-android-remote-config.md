@@ -36,7 +36,7 @@ dependencies {
 }
 ```
 
-</br>
+  
 
 ### 2. 원격 구성 싱글톤 객체 가져오기
 
@@ -49,7 +49,7 @@ Do not place Android context classes in static fields (static reference to Fireb
 - 말 그대로 Static한 응용프로그램 클래스를 전역으로 사용하면 메모리 누수가 날 위험이 있다는 것이다
 - FireBaseRemoteConfig는 싱글톤 객체이기 때문에 전역으로 저장해서 사용할 필요가 없다
 
-</br>
+   
 
 - `fromCallable`을 사용해서 remoteConfig의 결과를 비동기적으로 가져오는 코드이다
 
@@ -81,7 +81,7 @@ fun getRemoteConfigResult(tag: String, callback: RemoteConfigCallback): Disposab
 - `FirebaseRemoteConfig` 인스턴스를 가져온 후 `FirebaseRemoteConfigSetting` 빌더를 통해서 가져오기 간격을 조정해서 새로고침을 할 수 있도록 했다
     - 가져오기 호출은 제한이 걸려있는데 , 아무런 설정을 하지 않을 경우 기본값 12시간으로 설정되어있고 개발할때만 `setMinimumFetchIntervalInSeconds` 메서드를 통해서 간격을 조정하길 권장하고 있다
 
-</br>
+   
 
 - `setDefaultAsync` 를 통해서 아래와 같이 기본값을 xml에 저장하고, 설정해줄 수 있다
 
@@ -96,7 +96,7 @@ fun getRemoteConfigResult(tag: String, callback: RemoteConfigCallback): Disposab
 </defaultsMap>
 ```
 
-</br>
+  
 
 - `fetchAndActivate()` 를 통해서 서버에서 값을 가져올 수 있다
 
@@ -108,7 +108,7 @@ After the fetch is complete, the configs are activated so that the fetched key v
 
 - 비동기적으로 값을 패치하며, 패치된 결과를 실행시킨다. 만약 백엔드로부터 마지막 패치시점 시간이 설정된 시간 이내이면 최근 패치한 값을 가져오고, 시간이 지났다면 백엔드로부터 값을 다시 패치한다
 
-</br>
+  
 
 참고사이트
 
