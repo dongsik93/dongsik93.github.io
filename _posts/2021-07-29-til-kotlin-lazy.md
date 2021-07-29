@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Kotlin] Lazy"
-subtitle: "Firebase Remote Config"
+subtitle: "kotlin by lazy"
 date: 2021-07-29 22:50:00 +0900
 categories: til
 tags: kotlin
