@@ -126,7 +126,7 @@ private class SynchronizedLazyImpl<out T>(initializer: () -> T, lock: Any? = nul
 
     > Thread Safe 어떤 함수나 변수, 혹은 객체가 여러 스레드로부터 동시에 접근이 이루어져도 프로그램의 실행에 문제가 없음을 뜻한다
 
-- 특별히 모드를 선택하지 않으면 기본적으로 단 한번만 초기화를 수행하는 `SynchronizedLazyImpl`  [구현코드]([]()){}이다
+- 특별히 모드를 선택하지 않으면 기본적으로 단 한번만 초기화를 수행하는 `SynchronizedLazyImpl`  [구현코드]([]()){: class="underlineFill"}이다
 
 - `#1` : 전달된 initializer 람다를 `initializer` 프로퍼티에 저장한다
 
@@ -144,6 +144,5 @@ private class SynchronizedLazyImpl<out T>(initializer: () -> T, lock: Any? = nul
 
 참고사이트
 
-- [Kotlin의 프로퍼티 위임과 초기화 지연은 어떻게 동작하는가](<https://medium.com/til-kotlin-ko/kotlin-delegated-property-by-lazy%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80-74912d3e9c56>){}
-- [Kotlin lazy property - lateinit/lazy 살펴보기](<https://thdev.tech/kotlin/2018/03/25/Kotlin-lateinit-lazy/>){}
-
+- [Kotlin의 프로퍼티 위임과 초기화 지연은 어떻게 동작하는가](<https://medium.com/til-kotlin-ko/kotlin-delegated-property-by-lazy%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80-74912d3e9c56>){: class="underlineFill"}
+- [Kotlin lazy property - lateinit/lazy 살펴보기](<https://thdev.tech/kotlin/2018/03/25/Kotlin-lateinit-lazy/>){: class="underlineFill"}
