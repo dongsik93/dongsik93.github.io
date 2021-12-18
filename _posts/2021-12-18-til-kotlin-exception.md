@@ -57,11 +57,11 @@ comments: true
 
 ```kotlin
 try {
-		// Exception 발생이 예상되는 코드 블록
+    // Exception 발생이 예상되는 코드 블록
 } catch (e: Exception) {
-		// Exception이 발생했을 때 실행되는 블록
+    // Exception이 발생했을 때 실행되는 블록
 } finally {
-		// Exception 발생과 상관없이 무조건 실행되는 블록
+    // Exception 발생과 상관없이 무조건 실행되는 블록
 }
 ```
 
@@ -76,7 +76,7 @@ try {
     ```kotlin
     // 회피
     fun exceptionTest(): Nothing {
-    		throw IOException("exception")
+        throw IOException("exception")
     }
     ```
 
