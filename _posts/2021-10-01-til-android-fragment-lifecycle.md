@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] Fragment Lifecycle"
+title: "[Android] Fragment Lifecycle"
 subtitle: "Fragment Lifecycle"
 date: 2021-10-01 18:00:00 +0900
 categories: til
