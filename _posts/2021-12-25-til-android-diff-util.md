@@ -2,7 +2,7 @@
 layout: post
 title: "[Android] DiffUtil"
 subtitle: "DiffUtil에 대해 알아보자"
-date: 2021-12-24 15:00:00 +0900
+date: 2021-12-25 15:00:00 +0900
 categories: til
 tags: android
 comments: true
@@ -22,7 +22,7 @@ comments: true
 
 - RecyclerView에서 데이터 업데이트 처리를 효율적으로 작업하기위해 만들어진 클래스
 - 두 목록간의 차이점을 찾고 업데이트 되어야 할 목록을 반환해주고, 어댑터에 대한 업데이트를 알리는데 사용된다
-- `notifyDataSetChanged()` 라는 함수가 있지만 뷰를 업데이트시키는 과정에서 모든 데이터를 다시 그리기 때문에 비효율적이므로 `DiffUtil`을 사용해 데이트들을 비교후 변경된 부분만 효율적으로 업데이트 할 수 있다
+- `notifyDataSetChanged()` 라는 함수가 있지만 뷰를 업데이트시키는 과정에서 모든 데이터를 다시 그리기 때문에 비효율적이므로 `DiffUtil`을 사용해 데이터들을 비교후 변경된 부분만 효율적으로 업데이트 할 수 있다
 - DiffUtil은 내부적으로 [Eugene W. Myers의 diff algorithm](http://www.xmailserver.org/diff2.pdf){: class="underlineFill"}을 사용한다.
     - 해당 알고리즘은 공간에 최적화 되어있어 아이템이 N개 있을 때 공간복잡도는 O(N)이다
     - 시간복잡도는 ond/new 두 리스트의 합인 N개의 아이템과, old가 new로 변환되기 위해 필요한 최소 작업개수 D가 있을 때 O(N + D^2)이다.
@@ -49,8 +49,7 @@ comments: true
     }
     ```
 
-    - 4개의 추상 메서드와 1개의 비 추상 메서드로 구성되어있다
-    - 위는 4개의 추상메서드이다
+    - 4개의 추상 메서드와 1개의 비 추상 메서드로 구성되어있으며, 위는 4개의 추상메서드이다
     - 추상메서드
         - areItemsTheSame(oldPosition: Int, newPosition: Int)
             - 두 객체가 동일한 항목을 나타내는지 확인
@@ -68,9 +67,9 @@ comments: true
 
     ```kotlin
     private fun calcDiff(newItem: MutableList<String>) {
-    		val diffCallback = DiffTest(datSet, newItem)
-    		val diffResult: DiffUtil.DiffResult = DiffUtil.calculateDiff(diffCallback)
-    		diffResult.dispatchUpdatesTo(this)
+        val diffCallback = DiffTest(datSet, newItem)
+        val diffResult: DiffUtil.DiffResult = DiffUtil.calculateDiff(diffCallback)
+        diffResult.dispatchUpdatesTo(this)
     }
     ```
 
@@ -109,7 +108,7 @@ comments: true
 
 ### AreItemsTheSame vs AreContentsTheSame
 
-- 위에서 AreItemTheSame을 먼저 수행하고, true일때만 AreContentsTheSame을 수행한다고 했는데 이를 더 자세하게 알아보자
+- 위에서 areItemTheSame을 먼저 수행하고, true일때만 areContentsTheSame을 수행한다고 했는데 이를 더 자세하게 알아보자
 
 - `areItemTheSame`
 
