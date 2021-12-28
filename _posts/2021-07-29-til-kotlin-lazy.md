@@ -24,7 +24,7 @@ comments: true
 - 호출 시점에 `by lazy` 정의에 의해서 초기화를 진행한다
 - val(immutable) 에서만 사용이 가능하다
 - 초기화를 위해서는 함수명이라도 적어야 한다
-- lazy를 사용하는 겨웅 기본 `Synchronized` 로 동작한다
+- lazy를 사용하는 경우 기본 `Synchronized` 로 동작한다
 
 
 
