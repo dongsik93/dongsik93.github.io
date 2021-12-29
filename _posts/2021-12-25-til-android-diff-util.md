@@ -78,7 +78,7 @@ comments: true
 
 - `DiffUtil.ItemCallback()`
 
-    - DiffUtil.Callback()을 사용하면 직접 백그라운드 스레드에서 비교 처리를 수행하고, 결과를 다시 넘겨주는 코드를 작성해야 했는데, `DiffUtil.ItemCallabck()`과 `AsyncListDiffe`를 사용하면 내부적으로 모든 일들을 처리해준다
+    - DiffUtil.Callback()을 사용하면 직접 백그라운드 스레드에서 비교 처리를 수행하고, 결과를 다시 넘겨주는 코드를 작성해야 했는데, `DiffUtil.ItemCallabck()`과 `AsyncListDiffer`를 사용하면 내부적으로 모든 일들을 처리해준다
 
     ```kotlin
     class DiffTest : DiffUtil.ItemCallback<String>() {
