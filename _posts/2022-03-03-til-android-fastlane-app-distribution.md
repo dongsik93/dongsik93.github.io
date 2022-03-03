@@ -151,7 +151,7 @@ lane :distribute do
 end
 ```
 
-여기에 여러가지 설정을 해줄 수 있는데 [Firebase App Distribution - 3단계: Fastfile 설정 및 앱 배포] 문서에서 확인할 수 있다
+여기에 여러가지 설정을 해줄 수 있는데 [Firebase App Distribution - 3단계: Fastfile 설정 및 앱 배포](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane#step_3_set_up_your_fastfile_and_distribute_your_app){: class="underlineFill"} 문서에서 확인할 수 있다
 
 ### 5. 마지막 실행
 
