@@ -199,8 +199,8 @@ Firebase 콘솔에서 해당 버전이 올라간 모습을 확인할 수 있다
 
 ### 참고사이트
 
-- [구글 공식문서](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane) {: class="underlineFill"}
-- [올리브영 테스트앱 자동배포하기](http://tech.oliveyoung.co.kr/tech/2107152128/#%EC%82%AC%EC%A0%84%EC%9E%91%EC%97%85) {: class="underlineFill"}
+- [구글 공식문서](https://firebase.google.com/docs/app-distribution/android/distribute-fastlane){: class="underlineFill"}
+- [올리브영 테스트앱 자동배포하기](http://tech.oliveyoung.co.kr/tech/2107152128/#%EC%82%AC%EC%A0%84%EC%9E%91%EC%97%85){: class="underlineFill"}
 - [Quickly distribute your app with Firebase App Distribution using GitHub Actions + Fastlane](https://medium.com/firebase-developers/quickly-distribute-app-with-firebase-app-distribution-using-github-actions-fastlane-c7d8eca18ee0){: class="underlineFill"}
 
 
