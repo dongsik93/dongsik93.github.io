@@ -2,7 +2,7 @@
 layout: post
 title: "[Android] Room Migration"
 subtitle: "Room Database Migration"
-date: 2022-03-03 18:00:00 +0900
+date: 2022-03-04 18:00:00 +0900
 categories: til
 tags: android room
 comments: true
