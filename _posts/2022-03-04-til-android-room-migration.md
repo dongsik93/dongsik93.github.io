@@ -90,8 +90,9 @@ sample 테이블에 money 컬럼을 추가하면서 not null 제약조건에 기
 
 ```kotlin
 .fallbackToDestructiveMigration()
-fallbackToDestructiveMigration()
 ```
+
+`fallbackToDestructiveMigration()`
 
 - 이전 데이터베이스 스키마를 최신 스키마 버전으로 마이그레이션하는 마이그레이션을 찾을 수 없는 경우 Room에서 데이터베이스 테이블을 삭제한다
 - 기기의 데이터베이스 버전이 최신 스키마 버전과 일치하지 않는 경우 Room은 데이터베이스에서 필요한 마이그레이션을 실행한다
