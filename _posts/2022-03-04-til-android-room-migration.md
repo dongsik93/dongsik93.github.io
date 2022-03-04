@@ -6,6 +6,7 @@ date: 2022-03-04 18:00:00 +0900
 categories: til
 tags: android room
 comments: true
+
 ---
 
 
@@ -66,11 +67,11 @@ Sample 테이블에 money 컬럼이 추가된다고 했을 때 마이그레이�
 
 ```kotlin
 private val MIGRATION_1_TO_2: Migration = object : Migration(1,2) {
-		override fun migrate(database: SupportSQLiteDatabase) {
-				database.run {
-						execSQL("ALTER TABLE sample ADD money INTEGER NOT NULL DEFAULT 0")
-				}
-		}
+    override fun migrate(database: SupportSQLiteDatabase) {
+        database.run {
+        		execSQL("ALTER TABLE sample ADD money INTEGER NOT NULL DEFAULT 0")
+        }
+    }
 }
 ```
 
