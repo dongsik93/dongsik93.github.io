@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Android] 테스트앱 자동배포"
+title: "[Android] Fastlane #1 (App Distribution)"
 subtitle: "fastlane + Firebase App Distribution"
 date: 2022-03-03 18:00:00 +0900
 categories: til
@@ -11,7 +11,7 @@ comments: true
 
 
 
-# [Android] 테스트앱 자동배포
+# [Android] Fastlane #1 (App Distribution)
 
 
 
