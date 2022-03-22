@@ -57,7 +57,7 @@ Activity - ViewPager - NestedScrollView - RecyclerView
 
 
 
-일단 이번 이슈는 무지성으로 RecyclerView를 NestedScrollView로 감싼것이 문제였다. (사실 NestedScrollView 필요 없는 화면이였던건 안비밀)
+일단 이번 이슈는 무지성으로 RecyclerView를 NestedScrollView로 감싼것이 문제였다. ~~(사실 NestedScrollView 필요 없는 화면이였던건 안비밀)~~
 
 RecyclerView가 NestedScrollView 안에 들어가는 경우 NestedScrollView의 LinearLayout은 자녀 항목의 높이합에 해당하는 길이를 지니게 되는데, RecyclerView에 높이 값을 특정 숫자로 주지 않는 이상 match_parent든 wrap_content든 자신의 모든 데이터를 불러온 크기에 해당하는 길이로 설정되는 것을 몰랐기 때문에 발생한 문제였다
 
