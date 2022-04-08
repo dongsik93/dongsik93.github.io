@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "[Android] Paging3 load all pages at once"
-subtitle: "Paging3 troubleshooting"
-date: 2022-03-22 19:00:00 +0900
+title: "[Kotlin] Annotation"
+subtitle: "Kotlin annotation 공부"
+date: 2022-04-08 19:00:00 +0900
 categories: til
-tags: android paging3
+tags: kotlin
 comments: true
 ---
 
 
 
-# [Kotlin] 어노테이션
+# [Kotlin] Annotation
 
 > Hilt로 CoroutineDispatcher를 주입하려고 할 때 커스텀 어노테이션을 만들어야 했는데, 이 때 `@Retention` 어노테이션이 사용이 돼서 좀 더 자세하게 알아보게 되었다
 
