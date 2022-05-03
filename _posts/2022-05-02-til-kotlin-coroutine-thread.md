@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "# [Kotlin] Coroutine? Thread?"
+title: "[Kotlin] Coroutine? Thread?"
 subtitle: "Coroutine과 Thread 비교"
 date: 2022-05-02 22:00:00 +0900
 categories: til
