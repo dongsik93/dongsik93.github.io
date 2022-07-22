@@ -1,4 +1,4 @@
-```
+---
 layout: post
 title: "[Android] Dirty Flag Pattern"
 subtitle: "android designpattern"
@@ -6,7 +6,8 @@ date: 2022-07-22 18:00:00 +0900
 categories: til
 tags: Android DI Hilt
 comments: true
-```
+
+---
 
 
 
