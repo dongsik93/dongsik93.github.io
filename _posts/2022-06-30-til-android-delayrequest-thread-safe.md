@@ -285,6 +285,10 @@ fun sendEvent() = scope.actor<ActorJob> {
 
 
 
+#### 해당 예제 소스 : [dongsik93 git hub](https://github.com/dongsik93/blog-source/tree/master/delayRequest){: class="underlineFill"}
+
+
+
 ### 참고사이트
 
 - [코루틴은 race condition이 발생하지 않는 것일까?](https://yk-coding-letter.tistory.com/m/16){: class="underlineFill"}
