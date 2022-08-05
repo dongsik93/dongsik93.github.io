@@ -48,16 +48,17 @@ Gradle Plugin 4.1 이상과 4.0 이하로 나뉘어져있다.
 
 앱 수준 build.gradle
 
-```kotlin
+```groovy
 // build.gradle (app)
-...
 buildTypes {
-		debug { ... }
 		release { 
 				...
 				debugSymbolLevel 'FULL'
 		}
 }
+```
+
+```kotlin
 // build.gradle.kts
 buildTypes {
     release {
@@ -65,6 +66,8 @@ buildTypes {
     }
 }
 ```
+
+
 
 위 처럼 사용하고있는 앱의 환경에 따라서 build.gradle에 추가해주고 빌드를 하면 끝!
 
