@@ -30,7 +30,7 @@ Paging3를 사용해 데이터가 넘어와 pagingAdapter에 submitData에 Pagin
 // PagingDataAdapter.kt
 // #1
 suspend fun submitData(pagingData: PagingData<T>) {
-	differ.submitData(pagingData)
+  differ.submitData(pagingData)
 }
 // #2
 fun submitData(lifecycle: Lifecycle, pagingData: PagingData<T>) {
@@ -101,7 +101,7 @@ public suspend fun collectFrom(pagingData: PagingData<T>) {
             withContext<Unit>(mainDispatcher) {
                 if (event is PageEvent.Insert && event.loadType == REFRESH) { // #3
 										
-								...
+					...
 
                 } else {
                     if (postEvents()) {
@@ -114,8 +114,9 @@ public suspend fun collectFrom(pagingData: PagingData<T>) {
                     if (event is PageEvent.Drop) { // #5
                         lastAccessedIndexUnfulfilled = false
                     } else if (evnet is PageEvent.Insert) {
-												...
-										}
+						...
+										
+                    }
 
                     ...
 
@@ -227,14 +228,14 @@ private fun insertPage(insert: PageEvent.Insert<T>, callback: ProcessPageEventCa
     - callback에 event update처리, callback.onChanged, callback.onInserted …
         - 여기서 callback은 PagingAdapter를 상속받을때 넘겨준 diffcallback이다
         - UI Update가 일어나는 곳
-    - #3-1
+    - `#3-1`
         - 이전 `collectForm`에서 event가 insert, loadType이 refresh인 경우를 처리했기 때문에 exception을 발생시킨다
-    - #3-2
+    - `#3-2`
         - paging 정보를 pages 변수에 추가한다
         - loadType이 prepend이기 때문에 0부터 넘겨받은 pages까지 넣어준다
-    - #3-3
+    - `#3-3`
         - loadType이 append이기 때문에 기존에 pages가 가지고있던 index 부터 넘겨받은 pages까지 넣어준다
-    - #3-4
+    - `#3-4`
         - loadType에 따라서 데이터 처리가 완료되면 `CombinedLoadStates` 를 순회하며 상태를 update시켜준다
         - paging3에서 사용하는 `loadStateFlow` 에서 collect되는 정보들이 여기서 전달됨을 알 수 있다
 
