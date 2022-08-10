@@ -22,9 +22,9 @@ comments: true
 ```kotlin
 @JvmInline
 value class Color private constructor(val rgb: Int) {
-		companion object {
-				fun rgb(rgb: Int) = Color(rgb)
-		}
+  companion object {
+    fun rgb(rgb: Int) = Color(rgb)
+  }
 }
 ```
 
@@ -66,9 +66,9 @@ changeBackground(Color.rgb(000000))
 ```kotlin
 @JvmInline
 value class Color private constructor(val rgb: Int) {
-		companion object {
-				fun rgb(rgb: Int) = Color(rgb)
-		}
+  companion object {
+    fun rgb(rgb: Int) = Color(rgb)
+  }
 }
 ```
 
@@ -77,9 +77,7 @@ value class Color private constructor(val rgb: Int) {
 - value 키워드를 통해 value class를 정의할 수 있다
 - 이렇게 정의된 value class는 컴파일러에 의해 최적화의 대상이 된다
 
-```
-@JvmInline Annotation
-```
+`@JvmInline Annotation`
 
 - Specifies that given value class is inline class라는 설명이 되어있다
 
@@ -129,16 +127,10 @@ val first = list.first()   // unboxed back to primitive
 
 - 자동으로 생성하는 메서드가 다르다
 
-    - ```
-        data class
-        ```
-
+    - data class
         - equals, toString, hasCode, copy, componentN
-
-    - ```
-        value class
-        ```
-
+        
+- value class
         - equals, toString, hasCode
 
 - === 연산 허용 여부
