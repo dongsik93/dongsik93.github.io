@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] 제네릭 - 변성"
+title: "[Kotlin] 제네릭 #2 - 변성"
 subtitle: "Kotlin 변성, 공변"
 date: 2021-07-18 22:00:00 +0900
 categories: til
@@ -10,7 +10,13 @@ comments: true
 
 
 
-## 제네릭 - 변성(variance)
+## 제네릭 #2 - 변성(variance)
+
+
+
+> [[Kotlin] 제네릭 - 타입 상한](https://dongsik93.github.io/til/2021/07/16/til-kotlin-generic-type-upper-bound/){: class="underlineFill"} 에 이어서 제네릭 2번째 변성에 대해 알아보자
+
+
 
 ### 변성이란 ?
 
