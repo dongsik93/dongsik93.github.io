@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] 제네릭 - 타입 파라미터 소거"
+title: "[Kotlin] 제네릭 #3 - 타입 파라미터 소거"
 subtitle: "Kotlin Type erasure"
 date: 2021-07-24 00:30:00 +0900
 categories: til
@@ -10,11 +10,15 @@ comments: true
 
 
 
-## **[Kotlin] 제네릭 - 타입 파라미터 소거 (Type erasure)**
+## **[Kotlin] 제네릭 #3 - 타입 파라미터 소거 (Type erasure)**
 
-> 제네릭 공부 하기
+
+
+> [[Kotlin] 제네릭 #1 - 타입 상한](https://dongsik93.github.io/til/2021/07/16/til-kotlin-generic-type-upper-bound/){: class="underlineFill"}
 >
-> 3편
+> [[Kotlin] 제네릭 #2 - 타입 파라미터 소거](https://dongsik93.github.io/til/2021/07/23/til-kotlin-generic-type-erasure/){: class="underlineFill"}
+>
+> 에 이은 제네릭 공부 하기3편
 
 
 

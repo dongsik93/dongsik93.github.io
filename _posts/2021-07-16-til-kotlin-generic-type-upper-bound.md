@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Kotlin] 제네릭 - 타입 상한"
+title: "[Kotlin] 제네릭 #1 - 타입 상한"
 subtitle: "Kotlin 제네릭에대해 알아보자"
 date: 2021-07-16 18:30:00 +0900
 categories: til
@@ -10,7 +10,7 @@ comments: true
 
 
 
-# 제네릭 - 타입 상한
+# 제네릭 #1 - 타입 상한
 
 
 
@@ -63,6 +63,8 @@ void onNext(@NonNull T t);
 
 
 바로 타입 파라미터 T를 nullable이 아닌 nonull, 즉 널이 될 수 없게 만들어주면 되는데 이를 `타입 상한` 이라고 한다.
+
+
 
 > ###### 타입 상한(upper bound) 
 >
