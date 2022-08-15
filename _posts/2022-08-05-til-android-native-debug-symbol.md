@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Android] Native Degub Symbol"
+title: "[Android] Native Debug Symbol"
 subtitle: "PlayStore 경고문구 !!"
 date: 2022-08-05 18:50:00 +0900
 categories: til
