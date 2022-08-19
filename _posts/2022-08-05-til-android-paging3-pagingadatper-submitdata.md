@@ -20,6 +20,12 @@ comments: true
 
 Paging3를 사용해 데이터가 넘어와 pagingAdapter에 submitData에 PagingData를 넣어주면 PagingAdater에서 데이터를 받아 뷰를 그려준다
 
+
+
+![paging1_1.png](/img/in-post/paging1_1.png)
+
+
+
 그렇다면 submitData는 어떻게 PagingAdapter에 데이터를 넘겨주는걸까?
 
 그 내부를 알아보자
