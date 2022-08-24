@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[Android] DelayRequest(with Thread Safe)"
-subtitle: "thread safe"
+title: "[Android] Debounce 구현 (with Thread Safe)"
+subtitle: "Thread를 사용한 Debounce 직접 구현"
 date: 2022-06-30 18:00:00 +0900
 categories: til
-tags: android thread coroutine
+tags: android thread coroutine debounce
 comments: true
 
 
@@ -12,11 +12,13 @@ comments: true
 
 
 
-# [Android] DelayRequest(with Thread Safe)
+# [Android] Debounce 구현 (with Thread Safe)
 
 
 
-개발을 진행하려고 했던 것은 체크박스나, 스위치에다가 네트워크 요청을 달아야 하는데, 사용자가 내가 의도한대로 한번-한번 천천히 클릭하는게 일반적이겠지만, 그렇지 않을 경우(굉장히 빠르게, 많이 이벤트를 발생시킬 경우) 불필요한 네트워크 요청이 매우 많아지게 된다. 그래서 제일 마지막에 요청받은 이벤트에 대해서만 네트워크 요청을 붙여주기 위해서 어떤 방법이 있는가.. 에 대한 내용이다. 다른 방법도 존재하겠지만 일단 동기화 제어를 통해서 개발을 진행하게 되었다.
+개발을 진행하려고 했던 것은 체크박스나, 스위치에다가 네트워크 요청을 달아야 하는데, 사용자가 내가 의도한대로 한번-한번 천천히 클릭하는게 일반적이겠지만, 그렇지 않을 경우(굉장히 빠르게, 많이 이벤트를 발생시킬 경우) 불필요한 네트워크 요청이 매우 많아지게 된다. 그래서 제일 마지막에 요청받은 이벤트에 대해서만 네트워크 요청을 붙여주기 위해서 어떤 방법이 있는가.. 에 대한 내용이다. 보통 이럴땐 rx, flow의 오퍼레이터인 debounce를 사용한다. 하지만 이번엔 오퍼레이터를 사용하지 않고 동기화 제어를 통해 직접 구현해보도록 하자.
+
+
 
 그렇다면 동기화 제어란 무엇일까?
 
