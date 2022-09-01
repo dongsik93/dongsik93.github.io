@@ -4,7 +4,7 @@ title: "[Android] Paging3 PagingAdater가 UI를 업데이트하기까지"
 subtitle: "Paging3 데이터가 UI 업데이트 되는 과정"
 date: 2022-08-05 22:00:00 +0900
 categories: til
-tags: android paging
+tags: android paging3
 comments: true
 ---
 
