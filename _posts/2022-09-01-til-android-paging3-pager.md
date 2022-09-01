@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Android] Paging3 PagingAdater가 UI를 업데이트하기까지"
+title: "[Android] Paging3 Paging3 Pager 내부에서 일어나는 일"
 subtitle: "Paging3 Pager 내부 들여다보기"
 date: 2022-09-01 22:00:00 +0900
 categories: til
