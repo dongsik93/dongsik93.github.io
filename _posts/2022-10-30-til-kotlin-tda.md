@@ -50,9 +50,9 @@ Tell, don’t ask로, **물어보지 말고 그냥 시켜라** 라는 말로 번
 
 ```kotlin
 data class Capacity(
-	val totalSize: Long,
-	val usedSize: Long,
-	val remainSize: Long
+    val totalSize: Long,
+    val usedSize: Long,
+    val remainSize: Long
 )
 ```
 
@@ -60,11 +60,11 @@ data class Capacity(
 
 ```kotlin
 fun checkRemainSize(capacity: Capacity) {
-	if (capacity.remainSize > 0) {
-		// 0보다 클때
-	} else {
-		// 0보다 작을 때
-	}
+    if (capacity.remainSize > 0) {
+        // 0보다 클때
+    } else {
+        // 0보다 작을 때
+    }
 }
 ```
 
@@ -72,11 +72,11 @@ fun checkRemainSize(capacity: Capacity) {
 
 ```kotlin
 fun checkRemainSize(capacity: Capacity) {
-	if (capacity.remainSize > 0L && capacity.usedSize > 0L) {
-		// 0보다 클때
-	} else {
-		// 0보다 작을 때
-	}
+    if (capacity.remainSize > 0L && capacity.usedSize > 0L) {
+        // 0보다 클때
+    } else {
+        // 0보다 작을 때
+    }
 }
 ```
 
@@ -88,13 +88,13 @@ fun checkRemainSize(capacity: Capacity) {
 
 ```kotlin
 data class Capacity(
-	private val totalSize: Long,
-	private val usedSize: Long,
-	private val remainSize: Long
+    private val totalSize: Long,
+    private val usedSize: Long,
+    private val remainSize: Long
 ) {
-	fun isValid(): Boolean {
-		return remainSize > 0L
-	}
+    fun isValid(): Boolean {
+        return remainSize > 0L
+    }
 }
 ```
 
@@ -104,11 +104,11 @@ Capacity클래스의 프로퍼티를 private으로 정의해주고, 해당 로�
 
 ```kotlin
 fun checkRemainSize(capacity: Capacity) {
-	if (capacity.isValid()) {
-		// 0보다 클때
-	} else {
-		// 0보다 작을 때
-	}
+    if (capacity.isValid()) {
+        // 0보다 클때
+        } else {
+        // 0보다 작을 때
+    }
 }
 ```
 
