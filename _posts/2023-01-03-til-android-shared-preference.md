@@ -238,6 +238,10 @@ encryptedBytes = Base64.decode(base64EncryptedBytes, Base64.DEFAULT)
 
 
 
+해당 예제 소스 : [dongsik93 gitHub](https://github.com/dongsik93/blog-source/tree/master/encrypt){: class="underlineFill"}
+
+
+
 ### 참고사이트
 
 - [RSA(공개키), AES(비밀키), SHA 암호화 설명](https://kkh0977.tistory.com/134){: class="underlineFill"}
