@@ -175,6 +175,10 @@ private val scrollGestureListener = object : GestureDetector.SimpleOnGestureList
 
 
 
+해당 예제 소스 : [dongsik93 git hub](https://github.com/dongsik93/blog-source/tree/master/nestedWebView){: class="underlineFill"}
+
+
+
 ### 참고사이트
 
 - [NestedScrollWebView](https://github.com/tobiasrohloff/NestedScrollWebView){: class="underlineFill"}
