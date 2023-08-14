@@ -39,9 +39,7 @@ comments: true
 
 ![nsv_2.png](/img/in-post/nsv_2.png)
 
-WebView의 가로스크롤 바를 고정된 위치에 노출시키기 위해서 ScrollView 대신 CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout으로 변경했다.
-변경을 해놓고 나니 이제 세로 스크롤 중첩 문제가 발생했다. CoordinatorLayout을 사용할때 사용하는 `appbar_scrolling_view_behavior` 가 제대로 동작하지 않아 발생하는 문제였다.
-올바른 동작은, 위로 스크롤할 때 AppBarLayout이 접히고, 다 접히고 난 뒤 WebView의 스크롤이 동작하게끔 작업이 필요했고 NestedScrollView로 WebView를 감싸면 애초에 ScrollView에서 CoordinatorLayout으로 변경한 이유가 없어지기 때문에, NestedScrollView 처럼 동작하는 WebView를 만들어야 한다.
+WebView의 가로스크롤 바를 고정된 위치에 노출시키기 위해서 ScrollView 대신 CoordinatorLayout, AppBarLayout, CollapsingToolbarLayout으로 변경했다.<br/>변경을 해놓고 나니 이제 세로 스크롤 중첩 문제가 발생했다. CoordinatorLayout을 사용할때 사용하는 `appbar_scrolling_view_behavior` 가 제대로 동작하지 않아 발생하는 문제였다.<br/>올바른 동작은, 위로 스크롤할 때 AppBarLayout이 접히고, 다 접히고 난 뒤 WebView의 스크롤이 동작하게끔 작업이 필요했고 NestedScrollView로 WebView를 감싸면 애초에 ScrollView에서 CoordinatorLayout으로 변경한 이유가 없어지기 때문에, NestedScrollView 처럼 동작하는 WebView를 만들어야 한다.
 
 
 
@@ -49,8 +47,7 @@ WebView의 가로스크롤 바를 고정된 위치에 노출시키기 위해서 
 
 ### NestedScrollWebView
 
-NestedScroll이 적용된 WebView를 만들기 위해서는 NestedScrollingChild를 WebView에 적용하고 WebView의 onTouchEvent 에서 NestedScrollingChildHelper로 이벤트를 전달해야 한다. (처음에는 customBehavior를 만들어서 해결해보려고 했으나, 잘 되지 않았....)
-따라서 NestedScroll 적용을 위해 NestedScrollingChild3를 구현한다
+NestedScroll이 적용된 WebView를 만들기 위해서는 NestedScrollingChild를 WebView에 적용하고 WebView의 onTouchEvent 에서 NestedScrollingChildHelper로 이벤트를 전달해야 한다. (처음에는 customBehavior를 만들어서 해결해보려고 했으나, 잘 되지 않았....)<br/>따라서 NestedScroll 적용을 위해 NestedScrollingChild3를 구현한다
 
 ### NestedScrollingChild3
 
@@ -114,8 +111,7 @@ NestedScrollingChild의 메서드에는 View의 메서드의 파라미터에 추
 
 ## 2. 가로 스크롤
 
-웹뷰가 확대/축소가 되었을 때(웹뷰 좌우 스크롤이 가능한 상황) 좌우 해당 스크롤의 마지막 영역까지 이동한 후 ViewPager 좌우로 이동할 수 있게끔 만들어야 한다.
-처음엔 웹뷰에 touchListener를 달아서 이전 x좌표, 현재 x좌표를 비교해 좌/우 스크롤인지 판단한 후 웹뷰 내의 좌/우 스크롤이 가능한지 판단하는 식으로 처리를 했었다.
+웹뷰가 확대/축소가 되었을 때(웹뷰 좌우 스크롤이 가능한 상황) 좌우 해당 스크롤의 마지막 영역까지 이동한 후 ViewPager 좌우로 이동할 수 있게끔 만들어야 한다.<br/>처음엔 웹뷰에 touchListener를 달아서 이전 x좌표, 현재 x좌표를 비교해 좌/우 스크롤인지 판단한 후 웹뷰 내의 좌/우 스크롤이 가능한지 판단하는 식으로 처리를 했었다.
 
 ```kotlin
 override fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
@@ -134,9 +130,7 @@ override fun onTouch(view: View, motionEvent: MotionEvent): Boolean {
 }
 ```
 
-위처럼 구현을 하면 동작은 하지만… 이제 좌우 스크롤을 했을 때 위아래로 넘어가버리는 문제가 발생했다.
-사실 보통 사람들이 상하좌우 스크롤을 할 때 정확하게 위아래, 또는 좌우로 스크롤을 하는게 아니라 대각선으로 스크롤 동작을 하기 때문에 생기는 문제라고 생각했다.
-상하 스크롤을 할 때 어느정도 이동했는지를 판단해 좌우 스와이프를 막아주고, 움직인 거리가 x좌표가 y좌표값보다 크다면 좌우스크롤로 판단해 조건처리를 해주었다.
+위처럼 구현을 하면 동작은 하지만… 이제 좌우 스크롤을 했을 때 위아래로 넘어가버리는 문제가 발생했다.<br/>사실 보통 사람들이 상하좌우 스크롤을 할 때 정확하게 위아래, 또는 좌우로 스크롤을 하는게 아니라 대각선으로 스크롤 동작을 하기 때문에 생기는 문제라고 생각했다.<br/>상하 스크롤을 할 때 어느정도 이동했는지를 판단해 좌우 스와이프를 막아주고, 움직인 거리가 x좌표가 y좌표값보다 크다면 좌우스크롤로 판단해 조건처리를 해주었다.
 
 ```kotlin
 private val scrollGestureListener = object : GestureDetector.SimpleOnGestureListener() {
