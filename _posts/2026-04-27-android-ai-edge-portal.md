@@ -2,7 +2,7 @@
 layout: post
 title: "[Android] Google AI Edge Portal 프라이빗 프리뷰 선정 및 소개"
 subtitle: "온디바이스 AI 개발의 가장 큰 장벽, 기기 파편화 테스트를 해결해 줄 구글의 새 무기"
-date: 2026-04-10 18:00:00 +0900
+date: 2026-04-27 18:00:00 +0900
 categories: til
 tags: android ai on-device litert google-ai-edge private-preview
 comments: true
