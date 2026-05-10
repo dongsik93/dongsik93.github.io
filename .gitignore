@@ -56,3 +56,7 @@ node_modules
 .jekyll-metadata
 *.gem
 RESEARCH/
+
+# Local tooling / draft workspace
+.claude/
+_workspace/
