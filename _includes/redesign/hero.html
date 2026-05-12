@@ -1,0 +1,31 @@
+{% assign post = include.post %}
+{% if post %}
+  {% assign first_tag = post.tags | first %}
+  {% assign category = post.categories | first | default: post.category | default: first_tag | default: 'note' %}
+  {% assign words = post.content | strip_html | number_of_words %}
+  {% assign read_time = words | divided_by: 220 | plus: 1 %}
+  <section class="blog-hero" aria-labelledby="blog-latest-title">
+    <div class="blog-hero__meta">
+      <span class="blog-hero__badge">LATEST</span>
+      <span>{{ category | upcase }}</span>
+      <span aria-hidden="true">.</span>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" | upcase }}</time>
+      <span aria-hidden="true">.</span>
+      <span>{{ read_time }} MIN</span>
+    </div>
+    <h1 class="blog-hero__title" id="blog-latest-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
+    <p class="blog-hero__desc">
+      {% if post.subtitle %}
+        {{ post.subtitle }}
+      {% else %}
+        {{ post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}
+      {% endif %}
+    </p>
+    <a class="blog-hero__cta" href="{{ post.url | prepend: site.baseurl }}">
+      <span>READ POST</span>
+      <span class="blog-arrow" aria-hidden="true">-&gt;</span>
+    </a>
+  </section>
+{% endif %}

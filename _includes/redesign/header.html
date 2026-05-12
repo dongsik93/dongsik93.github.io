@@ -1,0 +1,28 @@
+<header class="blog-site-header">
+  <div class="blog-site-header__inner">
+    <a class="blog-wordmark" href="{{ '/' | prepend: site.baseurl }}" aria-label="동식이 블로그 홈">
+      <span>동식이 블로그</span>
+      <span class="blog-wordmark__cursor" aria-hidden="true"></span>
+      <span class="blog-wordmark__mono">/ dongsik93.github.io</span>
+    </a>
+
+    <nav class="blog-site-nav" aria-label="주요 메뉴">
+      <a class="is-active" href="{{ '/' | prepend: site.baseurl }}">Home</a>
+      <a href="{{ '/archive/' | prepend: site.baseurl }}">Archives</a>
+      <a href="{{ '/archive/#tag_cloud' | prepend: site.baseurl }}">Tags</a>
+      <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+    </nav>
+
+    <div class="blog-header-tools">
+      <button class="blog-search-btn" type="button" data-blog-open-palette aria-haspopup="dialog">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+        <span>검색</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <button class="blog-icon-btn" type="button" data-blog-theme-toggle aria-label="테마 전환">
+        <svg class="blog-theme-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="blog-theme-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,43 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{{ site.keyword }}">
+  <meta name="theme-color" content="#25231f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:image" content="{{ site.url }}{{ site.sidebar-avatar }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.SEOTitle }}">
+
+  <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+
+  <script>
+    (function () {
+      var theme = localStorage.getItem("blog-theme") || "dark";
+      document.documentElement.dataset.theme = theme;
+    }());
+  </script>
+  <style>
+    html { background: #25231f; color: #f3f1ed; }
+    html[data-theme="light"] { background: #f7f5f0; color: #292723; }
+    body { margin: 0; }
+  </style>
+  <link rel="stylesheet" href="{{ '/css/blog-redesign.css' | prepend: site.baseurl }}">
+
+  <!-- AdSense script (load once per page) -->
+  {% include adsense/script.html %}
+</head>

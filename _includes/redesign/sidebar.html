@@ -1,0 +1,115 @@
+<aside class="blog-sidebar" aria-label="블로그 정보">
+  <section class="blog-card blog-about-card">
+    <div class="blog-card__head">
+      <h2 class="blog-card__title">ABOUT</h2>
+      <span class="blog-card__meta">dongsik93</span>
+    </div>
+    <div class="blog-about-card__profile">
+      {% if site.sidebar-avatar %}
+      <img src="{{ site.sidebar-avatar | prepend: site.baseurl }}" alt="동식 프로필 이미지">
+      {% endif %}
+      <div>
+        <h3>문동식</h3>
+        <p>Android Developer</p>
+      </div>
+    </div>
+    <p class="blog-about-card__bio">
+      Android와 온디바이스 AI를 공부하고, 여행과 맛집, 키보드 취미까지 함께 기록하는 개인 노트입니다.
+    </p>
+    <div class="blog-pill-links">
+      {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
+      {% if site.instagram_username %}<a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram ↗</a>{% endif %}
+      {% if site.email %}<a href="mailto:{{ site.email }}">Email ↗</a>{% endif %}
+    </div>
+  </section>
+
+  {% include adsense/home-sidebar.html %}
+
+  <section class="blog-card">
+    <div class="blog-card__head">
+      <h2 class="blog-card__title">NAVER LOG</h2>
+      <span class="blog-card__meta">external</span>
+    </div>
+    <div class="blog-naver-log">
+      <details open>
+        <summary>여행 / 맛집</summary>
+        <a href="https://m.blog.naver.com/econ_view/224280947118" target="_blank" rel="noopener noreferrer">타이중 버스투어 고미습지 기록</a>
+        <a href="https://m.blog.naver.com/econ_view/224259222396" target="_blank" rel="noopener noreferrer">서울 라멘 맛집 탐방 중간 결산</a>
+        <a href="https://m.blog.naver.com/econ_view/224248832090" target="_blank" rel="noopener noreferrer">삿포로 비에이 후라노 버스투어</a>
+      </details>
+      <details>
+        <summary>키보드 / 취미</summary>
+        <a href="https://m.blog.naver.com/dongsik_93/223841893622" target="_blank" rel="noopener noreferrer">리니어 스위치 MZ Y3 타건 비교</a>
+        <a href="https://m.blog.naver.com/dongsik_93/223821397122" target="_blank" rel="noopener noreferrer">Eave65 빌드 후기</a>
+        <a href="https://m.blog.naver.com/dongsik_93/223858423429" target="_blank" rel="noopener noreferrer">Cerakey GreenCrazed 키캡 후기</a>
+      </details>
+    </div>
+  </section>
+
+  <section class="blog-card">
+    <div class="blog-card__head">
+      <h2 class="blog-card__title">NOW</h2>
+      <span class="blog-live"><i aria-hidden="true"></i>LIVE</span>
+    </div>
+    <div class="blog-now-list">
+      <p><span>writing_</span> Android / AI notes</p>
+      <p><span>tracking_</span> on-device model updates</p>
+      <p><span>logging_</span> travel, food, keyboards</p>
+    </div>
+  </section>
+
+  <section class="blog-card">
+    <div class="blog-card__head">
+      <h2 class="blog-card__title">TAGS</h2>
+      <span class="blog-card__meta">{{ site.tags | size }}</span>
+    </div>
+    <div class="blog-tags">
+      {% for tag in site.tags limit:24 %}
+        <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}">#{{ tag[0] }}<span>{{ tag[1].size }}</span></a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="blog-card">
+    <div class="blog-card__head">
+      <h2 class="blog-card__title">ARCHIVES</h2>
+      <span class="blog-card__meta">{{ site.posts.size }} posts</span>
+    </div>
+    {% assign blog_years_pipe = '' %}
+    {% for post in site.posts %}
+      {% assign blog_year = post.date | date: '%Y' %}
+      {% unless blog_years_pipe contains blog_year %}
+        {% assign blog_years_pipe = blog_years_pipe | append: blog_year | append: '|' %}
+      {% endunless %}
+    {% endfor %}
+    {% assign blog_years = blog_years_pipe | split: '|' %}
+    {% assign blog_max_year_count = 1 %}
+    {% for year in blog_years %}
+      {% if year != '' %}
+        {% assign blog_year_count = 0 %}
+        {% for post in site.posts %}
+          {% assign post_year = post.date | date: '%Y' %}
+          {% if post_year == year %}{% assign blog_year_count = blog_year_count | plus: 1 %}{% endif %}
+        {% endfor %}
+        {% if blog_year_count > blog_max_year_count %}{% assign blog_max_year_count = blog_year_count %}{% endif %}
+      {% endif %}
+    {% endfor %}
+    <div class="blog-archive-list">
+      {% for year in blog_years limit:8 %}
+        {% if year != '' %}
+          {% assign blog_year_count = 0 %}
+          {% for post in site.posts %}
+            {% assign post_year = post.date | date: '%Y' %}
+            {% if post_year == year %}{% assign blog_year_count = blog_year_count | plus: 1 %}{% endif %}
+          {% endfor %}
+          {% assign blog_bar = blog_year_count | times: 100 | divided_by: blog_max_year_count %}
+          <a class="blog-archive-row" href="{{ '/archive/' | prepend: site.baseurl }}">
+            <span>{{ year }}</span>
+            <i><b style="width: {{ blog_bar }}%"></b></i>
+            <em>{{ blog_year_count }}</em>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</aside>

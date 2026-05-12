@@ -1,0 +1,49 @@
+---
+---
+<!doctype html>
+<html lang="{{ page.lang | default: 'ko' }}" data-theme="dark">
+{% include redesign/head.html %}
+<body class="blog-redesign blog-post-body">
+  {% include adsense/script.html %}
+  <div class="blog-scroll-progress" aria-hidden="true"><div id="blog-progress-bar"></div></div>
+
+  {% include redesign/header.html %}
+
+  <main class="blog-post-shell" id="content">
+    <article class="blog-post-article" itemscope itemtype="https://schema.org/Article">
+      {% include redesign/post/hero.html %}
+      {% include redesign/post/toc-mobile.html %}
+
+      <div class="blog-post-grid">
+        <div class="blog-post-main">
+          <div class="blog-prose" itemprop="articleBody">
+            {{ content }}
+          </div>
+
+          {% assign blog_post_words = page.content | strip_html | number_of_words %}
+          {% if blog_post_words > 1000 %}
+            {% include redesign/post/in-article-ad.html %}
+          {% endif %}
+
+          {% include adsense/post-bottom.html %}
+          {% include redesign/post/prev-next.html %}
+          {% include redesign/post/comments.html %}
+        </div>
+
+        {% include redesign/post/sidebar.html %}
+      </div>
+    </article>
+  </main>
+
+  {% include redesign/footer.html %}
+  {% include redesign/palette.html %}
+
+  {% if page.mathjax %}
+    {% include mathjax_support.html %}
+  {% endif %}
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js" defer></script>
+  <script src="{{ '/js/blog-redesign.js' | prepend: site.baseurl }}" defer></script>
+  <script src="{{ '/js/blog-post.js' | prepend: site.baseurl }}" defer></script>
+</body>
+</html>

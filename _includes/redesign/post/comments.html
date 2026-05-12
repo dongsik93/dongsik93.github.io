@@ -1,0 +1,15 @@
+{% if page.comments != false %}
+<section class="blog-post-comments" aria-labelledby="blog-comments-title">
+  <div class="blog-section-label">
+    <span id="blog-comments-title">DISCUSSION</span>
+    <span class="blog-section-label__rule" aria-hidden="true"></span>
+    <span class="blog-section-label__count">UTTERANCES / GITHUB</span>
+  </div>
+  <div class="blog-post-comments__frame"
+       data-blog-utterances
+       data-repo="dongsik93/blog-comments"
+       data-issue-term="pathname"
+       data-theme-dark="github-dark"
+       data-theme-light="github-light"></div>
+</section>
+{% endif %}

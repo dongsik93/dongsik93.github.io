@@ -1,0 +1,34 @@
+<section class="blog-post-section" aria-labelledby="blog-recent-title">
+  <div class="blog-section-label">
+    <span id="blog-recent-title">POSTS / RECENT</span>
+    <span class="blog-section-label__rule" aria-hidden="true"></span>
+    <span class="blog-section-label__count">{{ include.total | default: site.posts.size }} POSTS</span>
+  </div>
+
+  <div class="blog-posts">
+    {% assign blog_row_posts = include.posts %}
+    {% for post in blog_row_posts offset:1 limit:9 %}
+      {% include redesign/post-row.html post=post index=forloop.index %}
+    {% else %}
+      <p class="blog-empty">아직 표시할 포스트가 없습니다.</p>
+    {% endfor %}
+  </div>
+
+  <nav class="blog-pagination" aria-label="페이지 이동">
+    {% if paginator and paginator.total_pages > 1 %}
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← PREV</a>
+      {% else %}
+        <span class="is-disabled">← PREV</span>
+      {% endif %}
+      <span>PAGE {{ paginator.page }} / {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">NEXT →</a>
+      {% else %}
+        <span class="is-disabled">NEXT →</span>
+      {% endif %}
+    {% else %}
+      <a href="{{ '/archive/' | prepend: site.baseurl }}">ALL POSTS →</a>
+    {% endif %}
+  </nav>
+</section>

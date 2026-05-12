@@ -1,0 +1,39 @@
+{% assign first_tag = page.tags | first %}
+{% assign category = page.categories | first | default: page.category | default: first_tag | default: 'note' %}
+{% assign words = page.content | strip_html | number_of_words %}
+{% assign read_time = words | divided_by: 220 | plus: 1 %}
+<header class="blog-post-hero">
+  <div class="blog-post-hero__meta">
+    <a class="blog-post-hero__badge" href="{{ site.baseurl }}/archive/?tag={{ category | url_encode }}">{{ category | upcase }}</a>
+    <span aria-hidden="true">.</span>
+    {% if page.date %}
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %d, %Y" | upcase }}</time>
+    {% else %}
+      <span>PREVIEW</span>
+    {% endif %}
+    <span aria-hidden="true">.</span>
+    <span>{{ read_time }} MIN READ</span>
+    <span aria-hidden="true">.</span>
+    <span>{{ words }} WORDS</span>
+  </div>
+
+  <h1 class="blog-post-hero__title" itemprop="headline">{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <p class="blog-post-hero__subtitle" itemprop="description">{{ page.subtitle }}</p>
+  {% endif %}
+
+  {% if page.tags %}
+    <div class="blog-post-hero__tags" aria-label="태그">
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/archive/?tag={{ tag | url_encode }}">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="blog-post-hero__stamp" aria-hidden="true">
+    <span>POST_</span>
+    <span>{% if page.date %}{{ page.date | date: "%Y%m%d" }}{% else %}PREVIEW{% endif %}</span>
+    <span>/</span>
+    <span>{{ category | downcase }}</span>
+  </div>
+</header>

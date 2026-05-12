@@ -1,0 +1,28 @@
+<footer class="blog-site-footer">
+  <div class="blog-site-footer__inner">
+    <div>
+      <pre class="blog-footer-ascii">┌────────────────────┐
+│ dongsik93 / notes  │
+│ android + ai + log │
+│ status: writing    │
+└────────────────────┘</pre>
+      <p class="blog-footer-copy">기술 글과 생활 기록을 같은 속도로 쌓아두는 개인 블로그입니다.</p>
+    </div>
+    <nav aria-label="하단 메뉴">
+      <h2>NAVIGATE</h2>
+      <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+      <a href="{{ '/archive/' | prepend: site.baseurl }}">Archives</a>
+      <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+    </nav>
+    <nav aria-label="외부 링크">
+      <h2>ELSEWHERE</h2>
+      {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
+      {% if site.instagram_username %}<a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener noreferrer">Instagram ↗</a>{% endif %}
+      <a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS ↗</a>
+    </nav>
+  </div>
+  <div class="blog-footer-baseline">
+    <span>© {{ site.time | date: '%Y' }} {{ site.title }}</span>
+    <span>BUILT WITH JEKYLL / HOSTED ON GITHUB PAGES</span>
+  </div>
+</footer>

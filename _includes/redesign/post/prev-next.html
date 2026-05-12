@@ -1,0 +1,29 @@
+<nav class="blog-post-prevnext" aria-label="이전/다음 글">
+  {% if page.previous %}
+    {% assign prev_cat = page.previous.categories | first | default: page.previous.category | default: 'note' %}
+    <a class="blog-post-prevnext__card" href="{{ page.previous.url | prepend: site.baseurl }}" rel="prev">
+      <span class="blog-post-prevnext__kicker">← PREV / {{ prev_cat | upcase }}</span>
+      <strong>{{ page.previous.title }}</strong>
+      {% if page.previous.subtitle %}<em>{{ page.previous.subtitle | truncate: 86 }}</em>{% endif %}
+    </a>
+  {% else %}
+    <span class="blog-post-prevnext__card is-disabled">
+      <span class="blog-post-prevnext__kicker">← PREV</span>
+      <strong>처음 글입니다</strong>
+    </span>
+  {% endif %}
+
+  {% if page.next %}
+    {% assign next_cat = page.next.categories | first | default: page.next.category | default: 'note' %}
+    <a class="blog-post-prevnext__card blog-post-prevnext__card--next" href="{{ page.next.url | prepend: site.baseurl }}" rel="next">
+      <span class="blog-post-prevnext__kicker">NEXT → / {{ next_cat | upcase }}</span>
+      <strong>{{ page.next.title }}</strong>
+      {% if page.next.subtitle %}<em>{{ page.next.subtitle | truncate: 86 }}</em>{% endif %}
+    </a>
+  {% else %}
+    <span class="blog-post-prevnext__card blog-post-prevnext__card--next is-disabled">
+      <span class="blog-post-prevnext__kicker">NEXT →</span>
+      <strong>최신 글입니다</strong>
+    </span>
+  {% endif %}
+</nav>

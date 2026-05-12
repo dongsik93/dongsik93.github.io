@@ -1,0 +1,34 @@
+---
+---
+<!doctype html>
+<html lang="{{ page.lang | default: 'ko' }}" data-theme="dark">
+{% include redesign/head.html %}
+<body class="blog-redesign">
+  {% include adsense/script.html %}
+  <div class="blog-scroll-progress" aria-hidden="true"><div id="blog-progress-bar"></div></div>
+
+  {% include redesign/header.html %}
+
+  {% if paginator and paginator.posts %}
+    {% assign blog_posts = paginator.posts %}
+    {% assign blog_total_posts = paginator.total_posts %}
+  {% else %}
+    {% assign blog_posts = site.posts %}
+    {% assign blog_total_posts = site.posts.size %}
+  {% endif %}
+  {% assign blog_featured = blog_posts | first %}
+
+  <main class="blog-page" id="content">
+    <div class="blog-content">
+      {% include redesign/hero.html post=blog_featured %}
+      {% include redesign/posts.html posts=blog_posts total=blog_total_posts %}
+    </div>
+    {% include redesign/sidebar.html %}
+  </main>
+
+  {% include redesign/footer.html %}
+  {% include redesign/palette.html %}
+
+  <script src="{{ '/js/blog-redesign.js' | prepend: site.baseurl }}" defer></script>
+</body>
+</html>

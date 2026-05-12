@@ -1,0 +1,32 @@
+<aside class="blog-post-sidebar" aria-label="글 목차와 작성자">
+  {% if page.catalog %}
+  <nav class="blog-post-toc" aria-label="목차">
+    <div class="blog-post-toc__head">
+      <span>CONTENTS</span>
+      <em>// SCROLL-SPY</em>
+    </div>
+    <ol data-blog-toc></ol>
+  </nav>
+  {% endif %}
+
+  <section class="blog-post-author">
+    <div class="blog-card__head">
+      <h2 class="blog-card__title">AUTHOR</h2>
+      <span class="blog-card__meta">dongsik93</span>
+    </div>
+    <div class="blog-post-author__profile">
+      {% if site.sidebar-avatar %}
+        <img src="{{ site.sidebar-avatar | prepend: site.baseurl }}" alt="" width="44" height="44" loading="lazy">
+      {% endif %}
+      <div>
+        <strong>문동식</strong>
+        <span>Android · AI · Notes</span>
+      </div>
+    </div>
+    <p>기술과 생활 기록을 같은 노트에 쌓습니다.</p>
+    <div class="blog-post-author__links">
+      {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
+      <a href="{{ '/' | prepend: site.baseurl }}">Home ↗</a>
+    </div>
+  </section>
+</aside>

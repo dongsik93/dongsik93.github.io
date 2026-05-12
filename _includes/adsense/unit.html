@@ -1,0 +1,34 @@
+{% comment %}
+  adsense/unit.html - reusable AdSense unit.
+  Params:
+    include.slot       - AdSense slot ID
+    include.format     - "auto", "fluid", "rectangle" and similar values
+    include.layout     - fluid layout key
+    include.responsive - "true" or "false"
+    include.wrap_class - outer reserve box classes
+    include.width      - fixed ad width in px
+    include.height     - fixed ad height in px
+    include.label      - visible ad label
+    include.aria_label - wrapper aria-label
+{% endcomment %}
+{% assign ad_format = include.format | default: "auto" %}
+{% assign ad_resp = include.responsive | default: "true" %}
+{% assign ad_label = include.label | default: "Advertisement" %}
+{% assign ad_aria = include.aria_label | default: "Sponsored advertisement" %}
+{% assign ad_style = "display:block" %}
+{% if include.width and include.height %}
+  {% capture ad_style %}display:inline-block;width:{{ include.width }}px;height:{{ include.height }}px{% endcapture %}
+{% endif %}
+<aside class="{{ include.wrap_class }}" aria-label="{{ ad_aria }}">
+  <span class="ad-label">{{ ad_label }}</span>
+  <div class="redesign-ad__frame">
+    <ins class="adsbygoogle"
+         style="{{ ad_style }}"
+         data-ad-client="ca-pub-4932906113590831"
+         data-ad-slot="{{ include.slot }}"
+         data-ad-format="{{ ad_format }}"{% if include.layout %}
+         data-ad-layout="{{ include.layout }}"{% endif %}
+         data-full-width-responsive="{{ ad_resp }}"></ins>
+  </div>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</aside>

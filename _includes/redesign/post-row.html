@@ -1,0 +1,29 @@
+{% assign post = include.post %}
+{% assign first_tag = post.tags | first %}
+{% assign category = post.categories | first | default: post.category | default: first_tag | default: 'note' %}
+{% assign words = post.content | strip_html | number_of_words %}
+{% assign read_time = words | divided_by: 220 | plus: 1 %}
+{% assign row_number = include.index | plus: 0 %}
+{% capture row_code %}{% if row_number < 10 %}P_00{{ row_number }}{% elsif row_number < 100 %}P_0{{ row_number }}{% else %}P_{{ row_number }}{% endif %}{% endcapture %}
+<article class="blog-post-row">
+  <a class="blog-post-row__link" href="{{ post.url | prepend: site.baseurl }}" aria-label="{{ post.title }}"></a>
+  <div class="blog-post-row__index">{{ row_code | strip }}</div>
+  <div class="blog-post-row__category">{{ category }}</div>
+  <div class="blog-post-row__body">
+    <h3 class="blog-post-row__title">{{ post.title }}</h3>
+    <p class="blog-post-row__sub">
+      {% if post.subtitle %}
+        {{ post.subtitle }}
+      {% else %}
+        {{ post.excerpt | strip_html | normalize_whitespace | truncate: 96 }}
+      {% endif %}
+    </p>
+  </div>
+  <div class="blog-post-row__meta">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" | upcase }}</time>
+    <span>{{ read_time }} MIN</span>
+  </div>
+  <div class="blog-post-row__preview" aria-hidden="true">
+    <span>{{ category }}.preview</span>
+  </div>
+</article>
