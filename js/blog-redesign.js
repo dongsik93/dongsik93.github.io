@@ -120,8 +120,46 @@
     window.location.href = lastResults[activeIndex].url;
   }
 
+  function setupArchiveFilter() {
+    var archive = document.querySelector("[data-blog-archive]");
+    if (!archive) return;
+
+    var buttons = Array.prototype.slice.call(archive.querySelectorAll("[data-blog-archive-tag]"));
+    var items = Array.prototype.slice.call(archive.querySelectorAll("[data-blog-archive-item]"));
+    var sections = Array.prototype.slice.call(archive.querySelectorAll("[data-blog-archive-section]"));
+
+    function selectTag(tag, updateUrl) {
+      buttons.forEach(function (button) {
+        button.classList.toggle("is-active", button.getAttribute("data-blog-archive-tag") === tag);
+      });
+
+      items.forEach(function (item) {
+        var tags = (item.getAttribute("data-tags") || "").split(",");
+        item.hidden = Boolean(tag) && tags.indexOf(tag) < 0;
+      });
+
+      sections.forEach(function (section) {
+        section.hidden = !section.querySelector("[data-blog-archive-item]:not([hidden])");
+      });
+
+      if (updateUrl && window.history && window.history.replaceState) {
+        var url = tag ? window.location.pathname + "?tag=" + tag : window.location.pathname;
+        window.history.replaceState(null, "", url);
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        selectTag(button.getAttribute("data-blog-archive-tag") || "", true);
+      });
+    });
+
+    selectTag(new URLSearchParams(window.location.search).get("tag") || "", false);
+  }
+
   loadPosts();
   updateProgress();
+  setupArchiveFilter();
 
   document.querySelectorAll("[data-blog-theme-toggle]").forEach(function (button) {
     button.addEventListener("click", toggleTheme);

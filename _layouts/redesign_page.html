@@ -1,0 +1,35 @@
+---
+---
+<!doctype html>
+<html lang="{{ page.lang | default: 'ko' }}" data-theme="dark">
+{% include redesign/head.html %}
+<body class="blog-redesign blog-page-body">
+  <div class="blog-scroll-progress" aria-hidden="true"><div id="blog-progress-bar"></div></div>
+
+  {% include redesign/header.html %}
+
+  <main class="blog-page-shell" id="content">
+    <section class="blog-page-hero">
+      <div class="blog-page-hero__kicker">{{ page.kicker | default: 'PAGE' }}</div>
+      <h1>{{ page.title | default: site.title }}</h1>
+      {% if page.description %}
+        <p>{{ page.description }}</p>
+      {% endif %}
+    </section>
+
+    <div class="blog-page-layout{% if page.no_sidebar %} blog-page-layout--single{% endif %}">
+      <article class="blog-page-main blog-prose">
+        {{ content }}
+      </article>
+      {% unless page.no_sidebar %}
+        {% include redesign/sidebar.html %}
+      {% endunless %}
+    </div>
+  </main>
+
+  {% include redesign/footer.html %}
+  {% include redesign/palette.html %}
+
+  <script src="{{ '/js/blog-redesign.js' | prepend: site.baseurl }}" defer></script>
+</body>
+</html>
