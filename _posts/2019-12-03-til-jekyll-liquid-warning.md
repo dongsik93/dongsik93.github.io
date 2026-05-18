@@ -16,7 +16,7 @@ comments: true
 
 ### 에러는 왜 발생하는가?
 
-- Jekyll에서 사용되는 liquid가 `{{`와 `}}`를 `escape` 문자로 사용한다. 따라서 문서에 escape문자가 들어있는 경우 Jekyll engine이 경고 메시지를 출력하고, 해당 escape문자 사이에 있는 내용은 무시된다
+- Jekyll에서 사용되는 liquid가 {% raw %}`{{`와 `}}`{% endraw %}를 `escape` 문자로 사용한다. 따라서 문서에 escape문자가 들어있는 경우 Jekyll engine이 경고 메시지를 출력하고, 해당 escape문자 사이에 있는 내용은 무시된다
 
 ![1](/img/in-post/liquid-error/1.png)
 

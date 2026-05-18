@@ -15,7 +15,7 @@ comments: true
 
 #### Restful
 
-<사용자 시점에서>
+`<사용자 시점에서>`
 
 Create = post
 
@@ -364,7 +364,6 @@ def comment_create(request, id):
 
 
 ###### delete
-
 
 
 

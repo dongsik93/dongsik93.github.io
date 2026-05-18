@@ -144,9 +144,11 @@ https://getbootstrap.com/
 
 
 
-<div1>
-​    <input type="text" placeholder="Search">
+```html
+<div>
+    <input type="text" placeholder="Search">
 </div>
+```
 
 
 ## Bootstrap_02
@@ -241,4 +243,3 @@ flex = 정렬
     </div>
 
 ```
-

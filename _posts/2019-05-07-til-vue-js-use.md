@@ -13,7 +13,8 @@ comments: true
 ### directive
 
 
-- `v-text` 
+- `v-text`
+
 ```html
  <div id="app">
      <h1>{% raw %}{{message}}{% endraw %}</h1>
