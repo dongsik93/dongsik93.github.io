@@ -71,9 +71,9 @@ netease_comment: false
 # Baidu Analytics 
 # ba_track_id: [your track id]
 
-# Google Analytics
-google_analytics: UA-144665538-1
-ga_track_id: 'UA-144665538-1'            # Format: UA-xxxxxx-xx
+# Google Analytics (GA4)
+google_analytics: G-C5T5RGG6QQ
+ga_track_id: 'G-C5T5RGG6QQ'              # GA4 Measurement ID (Format: G-XXXXXXXXXX)
 ga_domain: dongsik93.github.io
 
 
