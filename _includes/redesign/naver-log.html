@@ -6,9 +6,19 @@
   <div class="blog-naver-log">
     <details open>
       <summary>여행 / 맛집</summary>
-      <a href="https://m.blog.naver.com/econ_view/224280947118" target="_blank" rel="noopener noreferrer">타이중 버스투어 고미습지 기록</a>
-      <a href="https://m.blog.naver.com/econ_view/224259222396" target="_blank" rel="noopener noreferrer">서울 라멘 맛집 탐방 중간 결산</a>
-      <a href="https://m.blog.naver.com/econ_view/224248832090" target="_blank" rel="noopener noreferrer">삿포로 비에이 후라노 버스투어</a>
+      {%- comment -%} blogs.html(여행 후기 목록, 최신순)에서 앞 3개만 펼치고 나머지는 접는다. 새 글은 blogs.html 맨 위에 추가하면 된다. {%- endcomment -%}
+      {%- capture econ_all -%}{% include blogs.html %}{%- endcapture -%}
+      {%- assign econ_items = econ_all | split: '</details>' | first | split: '<li>' -%}
+      {%- for item in econ_items offset: 1 limit: 3 %}
+      {{ item | remove: '<small>' | remove: '</small>' | remove: '</li>' | remove: '</ul>' | strip }}
+      {%- endfor %}
+      <details class="blog-naver-log__more">
+        <summary>더보기 ({{ econ_items.size | minus: 4 }})</summary>
+        <a href="{{ '/backlinks/' | prepend: site.baseurl }}">전체 목록 페이지 →</a>
+        {%- for item in econ_items offset: 4 %}
+        {{ item | remove: '<small>' | remove: '</small>' | remove: '</li>' | remove: '</ul>' | strip }}
+        {%- endfor %}
+      </details>
     </details>
     <details>
       <summary>키보드 / 취미</summary>

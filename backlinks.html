@@ -1,0 +1,11 @@
+---
+title: Backlinks
+kicker: BACKLINKS
+layout: redesign_page
+permalink: /backlinks/
+no_sidebar: true
+description: 외부 블로그(econ_view) 글 전체 목록
+---
+
+{%- capture backlinks_all -%}{% include blogs.html %}{%- endcapture -%}
+{{ backlinks_all | replace: '<details>', '<details open>' }}

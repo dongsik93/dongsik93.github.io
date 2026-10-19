@@ -680,6 +680,11 @@ html[data-theme="light"] .blog-theme-sun {
   padding-bottom: 10px;
 }
 
+.blog-naver-log details details {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
 .blog-naver-log details:last-child {
   border-bottom: 0;
   padding-bottom: 0;
